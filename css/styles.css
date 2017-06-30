@@ -1,9 +1,64 @@
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: local('PT Astra Sans'), local('PTAstraSans-Regular'),
+		url('../fonts/subset-PTAstraSans-Regular.woff2') format('woff2'),
+		url('../fonts/subset-PTAstraSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: local('PT Astra Sans Bold'), local('PTAstraSans-Bold'),
+		url('../fonts/subset-PTAstraSans-Bold.woff2') format('woff2'),
+		url('../fonts/subset-PTAstraSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
     height: 100%;
+    font-family: 'PT Astra Sans', sans-serif;
 }
 .content {
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.slide {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+	overflow: hidden;
+}
+.slide_1 {
+    position: relative;
+    left: -10vw;
+    width: 120vw;
+}
+.date-place {
+    padding-left: 80vw;
+    width: 120vw;
+    height: 18.6vh;
+    transform: rotate(-15.5deg);
+    background-color: #fed91c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 4.7vh;
+    font-size: 4vh;
+}
+.slide img {
+    height: 40vh;
+
+    position: absolute;
+    z-index: 2;
+    top: 30vh;
 }
