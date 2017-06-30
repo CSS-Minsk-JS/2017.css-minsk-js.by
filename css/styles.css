@@ -43,6 +43,11 @@ html, body {
         position: relative;
         left: -10vw;
     }
+    .logo {
+        height: 40vh;
+        position: absolute;
+        z-index: 1;
+    }
     .date-place {
         width: 120vw;
         height: 18.6vh;
@@ -65,11 +70,6 @@ html, body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-    }
-    .logo {
-        height: 40vh;
-        position: absolute;
-        z-index: 1;
     }
 }
 
