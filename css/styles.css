@@ -14,6 +14,14 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Circe Extra';
+	src: local('Circe Extra Bold'), local('Circe-ExtraBold'),
+		url('subset-Circe-ExtraBold.woff2') format('woff2'),
+		url('subset-Circe-ExtraBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +78,50 @@ html, body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+@media only screen and (min-width : 992px) {
+    .header {
+        width: 80vw;
+        height: 5vh;
+        margin: 0 auto;
+        position: fixed;
+        top: 2vh;
+        left: 10vw;
+        z-index: 1;
+    }
+    .nav__list {
+        display: flex;
+        list-style: none;
+        font-family: 'Circe Extra', sans-serif;
+        font-size: 1.7vh;
+        text-transform: uppercase;
+    }
+    .nav__link {
+        margin-right: 3vh;
+        position: relative;
+        z-index: 5;
+        line-height: 5vh;
+        text-decoration: none;
+        color: #000000;
+    }
+    .nav__link::after {
+        content: "";
+        width: 60%;
+        height: 60%;
+        display: block;
+        position: absolute;
+        left: 20%;
+        top: 15%;
+        z-index: -1;
+        transform: skew(-15.5deg) rotate(-15.5deg);
+        background: #fed91c;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .nav__link:hover::after {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
     }
 }
 
