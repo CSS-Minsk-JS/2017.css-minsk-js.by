@@ -89,7 +89,7 @@ html, body {
         font-size: 5vh;
         text-align: center;
     }
-    .slide__title-addition {
+    .slide__title-more {
         display: none;
     }
     .speakers {
@@ -136,12 +136,11 @@ html, body {
     }
 }
 @media only screen and (min-width : 1200px) {
-    .slide_2 {
-        width: 60vw;
-        margin: 0 auto;
-    }
-    .slide__title-addition {
+    .slide__title-more {
         display: inline;
+    }
+    .slide__title-swipe {
+        display: none;
     }
     .speakers {
         height: 85vh;
