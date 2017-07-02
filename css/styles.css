@@ -38,9 +38,9 @@ html, body {
         -webkit-scroll-snap-type: mandatory;
         -ms-scroll-snap-type: mandatory;
         scroll-snap-type: mandatory;
-        -webkit-scroll-snap-points-y: repeat(100vh);
-        -ms-scroll-snap-points-y: repeat(100vh);
-        scroll-snap-points-y: repeat(100vh);
+        -webkit-scroll-snap-points-y: repeat(100%);
+        -ms-scroll-snap-points-y: repeat(100%);
+        scroll-snap-points-y: repeat(100%);
     }
     .slide {
         height: 100vh;
@@ -83,6 +83,44 @@ html, body {
         justify-content: center;
         text-align: center;
     }
+    .slide__title {
+        padding-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 5vh;
+        text-align: center;
+    }
+    .slide__title-addition {
+        display: none;
+    }
+    .speakers {
+        display: flex;
+        overflow-x: auto;
+    }
+    .speakers__item {
+        height: 85vh;
+        margin: 0 10%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 80%;
+        text-align: center;
+    }
+    .speakers__img-wrapper {
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        background: linear-gradient(-15.5deg, #ffffff 33%,#fed91c 33%,#fed91c 66%,#ffffff 66%);
+    }
+    .speakers__img {
+        min-width: 75%;
+        max-width: 75%;
+        border-radius: 50%;
+        position: relative;
+    }
+    .speakers__name {
+        font-size: 5vh;
+    }
+    .speakers__job {
+        font-size: 4vh;
+    }
 }
 @media only screen and (min-width : 768px) {
     .logo {
@@ -95,6 +133,43 @@ html, body {
     }
     .date-place__wrapper {
         bottom: -16vh;
+    }
+}
+@media only screen and (min-width : 1200px) {
+    .slide_2 {
+        width: 60vw;
+        margin: 0 auto;
+    }
+    .slide__title-addition {
+        display: inline;
+    }
+    .speakers {
+        height: 85vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .speakers__item {
+        height: auto;
+        margin: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 28%;
+        background: transparent;
+    }
+    .speakers__img-wrapper {
+        margin-top: 0;
+    }
+    .speakers__img {
+        min-width: 75%;
+        max-width: 75%;
+        border-radius: 50%;
+        position: relative;
+    }
+    .speakers__name {
+        font-size: 3vh;
+    }
+    .speakers__job {
+        font-size: 2vh;
     }
 }
 @media only screen and (min-width: 1440px) {
@@ -112,4 +187,5 @@ html, body {
         width: 60vw;
         margin: 0 auto;
     }
+
 }
