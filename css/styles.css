@@ -1,26 +1,22 @@
 @font-face {
     font-family: 'PT Astra Sans';
-    src: local('PT Astra Sans'), local('PTAstraSans-Regular'),
-        url('../fonts/subset-PTAstraSans-Regular.woff2') format('woff2'),
-        url('../fonts/subset-PTAstraSans-Regular.woff') format('woff');
+    src: local('PT Astra Sans'), local('PTAstraSans-Regular'), url('../fonts/subset-PTAstraSans-Regular.woff2') format('woff2'), url('../fonts/subset-PTAstraSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'PT Astra Sans';
-    src: local('PT Astra Sans Bold'), local('PTAstraSans-Bold'),
-        url('../fonts/subset-PTAstraSans-Bold.woff2') format('woff2'),
-        url('../fonts/subset-PTAstraSans-Bold.woff') format('woff');
+    src: local('PT Astra Sans Bold'), local('PTAstraSans-Bold'), url('../fonts/subset-PTAstraSans-Bold.woff2') format('woff2'), url('../fonts/subset-PTAstraSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
-	font-family: 'Circe Extra';
-	src: local('Circe Extra Bold'), local('Circe-ExtraBold'),
-		url('subset-Circe-ExtraBold.woff2') format('woff2'),
-		url('subset-Circe-ExtraBold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Circe Extra';
+    src: local('Circe Extra Bold'), local('Circe-ExtraBold'), url('subset-Circe-ExtraBold.woff2') format('woff2'), url('subset-Circe-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 * {
     margin: 0;
@@ -38,31 +34,16 @@ html, body {
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-scroll-behavior: smooth;
-                scroll-behavior: smooth;
+        scroll-behavior: smooth;
         -webkit-scroll-snap-type: mandatory;
-            -ms-scroll-snap-type: mandatory;
-                scroll-snap-type: mandatory;
+        -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
         -webkit-scroll-snap-points-y: repeat(100vh);
-            -ms-scroll-snap-points-y: repeat(100vh);
-                scroll-snap-points-y: repeat(100vh);
+        -ms-scroll-snap-points-y: repeat(100vh);
+        scroll-snap-points-y: repeat(100vh);
     }
     .slide {
         height: 100vh;
-    }
-    .slide__title {
-        margin-top: 10vh;
-        margin-bottom: 5vh;
-        font-size: 5vh;
-        text-align: center;
-    }
-    .slide__subtitle {
-        margin-top: 3.5vh;
-        margin-bottom: 1.5vh;
-        font-size: 3vh;
-    }
-    .slide__paragraph {
-        font-size: 3vh;
-        line-height: 1.3;
     }
     .slide_1 {
         width: 120vw;
@@ -74,25 +55,21 @@ html, body {
         position: relative;
         left: -10vw;
     }
-    .slide_2 {
-        margin-left: 3vh;
-        margin-right: 3vh;
-    }
     .logo {
-        height: 40vh;
+        height: 34vh;
         position: absolute;
         z-index: 1;
     }
     .date-place {
         width: 120vw;
-        height: 18.6vh;
+        height: 15.8vh;
         padding-left: 80vw;
         transform: rotate(-15.5deg);
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
-        top: 4.7vh;
+        top: 4vh;
         font-size: 4vh;
         background-color: #fed91c;
     }
@@ -107,64 +84,23 @@ html, body {
         text-align: center;
     }
 }
-@media only screen and (min-width : 992px) {
-    .header {
-        width: 80vw;
-        height: 5vh;
-        margin: 0 auto;
-        position: fixed;
-        top: 2vh;
-        left: 10vw;
-        z-index: 1;
+@media only screen and (min-width : 768px) {
+    .logo {
+        height: 40vh;
     }
-    .nav__list {
-        display: flex;
-        list-style: none;
-        font-family: 'Circe Extra', sans-serif;
-        font-size: 1.7vh;
-        text-transform: uppercase;
+    .date-place {
+        height: 18.6vh;
+        top: 4.7vh;
+        font-size: 5vh;
     }
-    .nav__link {
-        margin-right: 3vh;
-        position: relative;
-        z-index: 5;
-        line-height: 5vh;
-        text-decoration: none;
-        color: #000000;
-    }
-    .nav__link::after {
-        content: "";
-        width: 60%;
-        height: 60%;
-        display: block;
-        position: absolute;
-        left: 20%;
-        top: 15%;
-        z-index: -1;
-        transform: skew(-15.5deg) rotate(-15.5deg);
-        background: #fed91c;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-    }
-    .nav__link:hover::after {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out;
-    }
-    .slide_2 {
-        margin: 0;
-    }
-    .slide__subtitle {
-        margin-top: 2.5vh;
-        margin-bottom: 1.5vh;
-        font-size: 3vh;
-    }
-    .slide__paragraph {
-        font-size: 2vh;
-        line-height: 1.3;
+    .date-place__wrapper {
+        bottom: -16vh;
     }
 }
-
 @media only screen and (min-width: 1440px) {
+    .date-place {
+        font-size: 4.7vh;
+    }
     .date-place__wrapper {
         position: static;
         display: flex;
