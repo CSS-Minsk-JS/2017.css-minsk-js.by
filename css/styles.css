@@ -79,6 +79,7 @@ html, body {
         height: 80vh;
         display: inline-block;
         column-width: 100vw;
+        column-gap: normal;
     }
     .logo {
         height: 34vh;
