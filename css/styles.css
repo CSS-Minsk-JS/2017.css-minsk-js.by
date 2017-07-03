@@ -110,6 +110,11 @@ html, body {
     .slide__title-more {
         display: none;
     }
+    .slide__title-swipe::after {
+        content: "→";
+        position: relative;
+        top: 0.2vh;
+    }
     .slide__subtitle {
         margin-top: 2.5vh;
         margin-bottom: 1.5vh;
@@ -175,7 +180,7 @@ html, body {
     .slide__title-more {
         display: inline;
     }
-    .slide__title-swipe {
+    .slide__title-swipe::after {
         display: none;
     }
     .speakers {
