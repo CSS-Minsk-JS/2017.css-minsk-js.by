@@ -123,6 +123,14 @@ html, body {
     .speakers {
         display: flex;
         overflow-x: auto;
+        -webkit-scroll-behavior: smooth;
+        scroll-behavior: smooth;
+        -webkit-scroll-snap-type: mandatory;
+        -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+        -webkit-scroll-snap-points-x: repeat(100%);
+        -ms-scroll-snap-points-x: repeat(100%);
+        scroll-snap-points-x: repeat(100%);
     }
     .speakers__item {
         height: 85vh;
