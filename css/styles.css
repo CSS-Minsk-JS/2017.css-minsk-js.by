@@ -135,6 +135,7 @@ html, body {
     }
     .speakers {
         display: flex;
+        margin-right: 0.1%;
         overflow-x: auto;
         -webkit-scroll-behavior: smooth;
         scroll-behavior: smooth;
@@ -147,16 +148,16 @@ html, body {
     }
     .speakers__item {
         height: 85vh;
-        margin-right: 10%;
-        margin-left: 10%;
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 80%;
+        flex-basis: 100%;
         text-align: center;
     }
     .speakers__img-wrapper {
         margin-top: 10vh;
+        margin-right: 10%;
         margin-bottom: 3vh;
+        margin-left: 10%;
         background: linear-gradient(-15.5deg, #ffffff 33%,#fed91c 33%,#fed91c 66%,#ffffff 66%);
     }
     .speakers__img {
@@ -193,6 +194,7 @@ html, body {
         display: none;
     }
     .speakers {
+        margin-right: 0;
         height: 85vh;
         flex-wrap: wrap;
         justify-content: space-around;
