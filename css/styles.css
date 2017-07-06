@@ -85,6 +85,9 @@ html, body {
         height: 34vh;
         position: absolute;
         z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .date-place {
         width: 120vw;
@@ -201,7 +204,7 @@ html, body {
     }
     .speakers__item {
         height: auto;
-        margin: 0;
+        margin: 0 0 5vh;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 28%;
