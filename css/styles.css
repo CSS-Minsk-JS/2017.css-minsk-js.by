@@ -26,6 +26,7 @@
 html, body {
     height: 100%;
     font-family: 'PT Astra Sans', sans-serif;
+    background-color: #ffffff;
 }
 @media only screen and (min-width: 320px) {
     .content {
@@ -44,6 +45,7 @@ html, body {
     }
     .slide {
         height: 100vh;
+        padding-bottom: 10vh;
         position: relative;
     }
     .slide_main {
@@ -56,15 +58,35 @@ html, body {
         position: relative;
         left: -10vw;
     }
+    .btn-buy {
+        width: 100vw;
+        height: 10vh;
+        border-width: 0.8vh;
+        border-style: solid;
+        border-color: #ffd920;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        font-family: 'PT Astra Sans', sans-serif;
+        font-weight: bold;
+        font-size: 3.5vh;
+        line-height: 9vh;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .btn-buy:hover {
+        color: #ffffff;
+        background-color: #ffd920;
+    }
     .text-content {
         min-width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        position: absolute;
-        top: 15vh;
-        left: 0;
-        bottom: 0;
-        right: 0;
         overflow-x: scroll;
         -webkit-scroll-behavior: smooth;
         scroll-behavior: smooth;
@@ -76,7 +98,7 @@ html, body {
         scroll-snap-points-x: repeat(100%);
     }
     .text-content__wrapper {
-        height: 80vh;
+        height: 75vh;
         display: inline-block;
         column-width: 100vw;
         column-gap: normal;
@@ -84,6 +106,9 @@ html, body {
     .logo {
         height: 34vh;
         position: absolute;
+        top: 45vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
         z-index: 1;
     }
     .date-place {
@@ -154,9 +179,9 @@ html, body {
         text-align: center;
     }
     .speakers__img-wrapper {
-        margin-top: 10vh;
+        margin-top: 5vh;
         margin-right: 10%;
-        margin-bottom: 3vh;
+        margin-bottom: 8vh;
         margin-left: 10%;
         background: linear-gradient(-15.5deg, #ffffff 33%,#fed91c 33%,#fed91c 66%,#ffffff 66%);
     }
@@ -187,11 +212,25 @@ html, body {
     }
 }
 @media only screen and (min-width : 1200px) {
+    .content {
+        margin-top: 9vh;
+    }
     .slide__title-more {
         display: inline;
     }
     .slide__title-swipe::after {
         display: none;
+    }
+    .btn-buy {
+        width: 15vw;
+        height: 6vh;
+        border-width: 0.7vh;
+        top: 3vh;
+        right: 3vh;
+        bottom: auto;
+        left: auto;
+        font-size: 2.5vh;
+        line-height: 5vh;
     }
     .speakers {
         margin-right: 0;
