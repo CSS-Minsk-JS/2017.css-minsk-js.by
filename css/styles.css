@@ -33,8 +33,9 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    min-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .header {
@@ -45,53 +46,130 @@ body {
     height: 10vh;
     background-color: #fff;
     z-index: 100;
+    border-bottom: 1px solid #efefef;
+}
+
+.header__logo {
+    font-size: 0;
+    background-image: url('../img/logo.svg');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    margin-top: 0.5vh;
+    height: 9vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header__toggle-checkbox {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -10000;
+}
+
+.header__toggle-checkbox:checked~.header__toggle-button span {
+    background-color: #fff;
+    transition: background .3s
+}
+
+.header__toggle-checkbox:checked~.header__toggle-button span:before,
+.header__toggle-checkbox:checked~.header__toggle-button span:after {
+    visibility: visible;
+    top: 0;
+    bottom: auto;
+    transform: rotate(45deg);
+    transition: background .3s, transform .3s linear .3s, top .3s, bottom .3s
+}
+
+.header__toggle-checkbox:checked~.header__toggle-button span:after {
+    transform: rotate(-45deg)
+}
+
+.header__toggle-checkbox:checked~.header__menu {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    bottom: 10vh;
+    background-color: #fff;
+}
+
+.header__toggle-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin-top: -20px;
+    cursor: pointer
+}
+
+.header__toggle-button span {
+    width: 30px;
+    height: 3px;
+    background-color: #888;
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    transition: background .3s
+}
+
+.header__toggle-button span:before,
+.header__toggle-button span:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: -8px;
+    background-color: #888;
+    transition: background .3s, transform .3s, top .3s linear .3s, bottom .3s linear .3s
+}
+
+.header__toggle-button span:after {
+    top: 8px
+}
+
+.header__toggle-button:hover span,
+.header__toggle-button:hover span:before,
+.header__toggle-button:hover span:after {
+    background-color: #302f2f
 }
 
 .header__menu {
+    display: none;
     list-style-type: none;
-    font-size: 0;
     padding-top: 2.4vh;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header__menu-item {
-    display: inline-block;
-}
-
-.header__menu-item+.header__menu-item {
-    margin-left: 1vw;
+    text-align: center;
 }
 
 .header__menu-link {
     color: #000;
     text-transform: uppercase;
-    font-size: 2vh;
+    font-size: 5vh;
     text-decoration: none;
     font-weight: bold;
     padding: 1.5vh 1vw;
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 
-.header__menu-link::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 6vw;
-    height: 1.2vh;
-    background-color: #ffd920;
-    z-index: -1;
-    transform: skew(0, -15deg);
-    left: 50%;
-    margin-left: -3vw;
-    margin-top: 0.6vh;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
 
-.header__menu-link:focus::before,
-.header__menu-link:hover::before {
-    opacity: 1;
-}
 
 .content {
     width: 100%;
@@ -160,14 +238,13 @@ body {
 }
 
 .text-content__wrapper {
-    height: 75vh;
     display: inline-block;
 }
 
 .logo {
     height: 34vh;
     position: absolute;
-    top: 45vh;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -203,6 +280,10 @@ body {
     margin-bottom: 5vh;
     font-size: 5vh;
     text-align: center;
+}
+
+.slide {
+    padding-top: 10vh;
 }
 
 .slide__title-more {
@@ -287,15 +368,60 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        min-width: auto;
+    }
+    .header__toggle-button {
+        display: none;
+        visibility: hidden;
+    }
+    .header__menu {
+        display: inline-block;
+    }
+    .header__menu-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header__menu-item+.header__menu-item {
+        margin-left: 1vw;
+    }
+
+    .header__menu-link {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 2vh;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1.5vh 1vw;
+        display: inline-block;
+        position: relative;
+    }
+    .header__menu-link::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 6vw;
+        height: 1.2vh;
+        background-color: #ffd920;
+        z-index: -1;
+        transform: skew(0, -15deg);
+        left: 50%;
+        margin-left: -3vw;
+        margin-top: 0.6vh;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .header__menu-link:focus::before,
+    .header__menu-link:hover::before {
+        opacity: 1;
+    }
     .slide {
         height: 100vh;
-        padding-top: 10vh;
         padding-bottom: 0;
-    }
-    .slide_speakers {
-        width: 75vw;
-        margin-right: auto;
-        margin-left: auto;
     }
     .slide__title-more {
         display: inline;
@@ -310,12 +436,16 @@ body {
         width: 27vh;
         height: 6vh;
         border-width: 0.7vh;
-        top: 3vh;
-        right: 3vh;
-        bottom: auto;
-        left: auto;
         font-size: 2.5vh;
         line-height: 5vh;
+        visibility: visible;
+        float: right;
+        margin-top: 2vh;
+        display: block;
+    }
+    .btn-buy.__mobile {
+        display: none;
+        visibility: hidden;
     }
     .speakers {
         margin-right: 0;
@@ -347,9 +477,6 @@ body {
     .speakers__job {
         font-size: 2vh;
     }
-    .text-content {
-        overflow-x: visible;
-    }
     .content__wrapper {
         height: 70vh;
     }
@@ -370,12 +497,6 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-    .slide_speakers {
-        width: 60vw;
-    }
-    .text-content__wrapper {
-        height: 70vh;
-    }
     .date-place {
         font-size: 4.7vh;
     }

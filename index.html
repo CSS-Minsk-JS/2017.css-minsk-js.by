@@ -48,18 +48,21 @@
     <body>
         <header class="header">
             <div class="wrapper">
-                <nav class="header__menu">
-                    <ul>
-                        <li class="header__menu-item"><a class="header__menu-link" href="" title="">Home</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link" href="#our-speakers" title="Speakers">Speakers</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a></li>
+                <nav>
+                    <a class="header__logo __main __js-menu-link" href="#home" title="CSS-Minsk-JS Conf">CSS-Minsk-JS</a>
+                    <input type="checkbox" id="menu" class="header__toggle-checkbox">
+                    <label for="menu" class="header__toggle-button" id="toggle"><span></span></label>
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#home" title="Home">Home</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#our-speakers" title="Speakers">Speakers</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a></li>
                     </ul>
-                </nav>
                 <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy">Buy a ticket</a>
+                </nav>
             </div>
         </header>
         <main class="content">
-            <section class="slide slide_main">
+            <section class="slide slide_main" id="home">
                 <img src="img/logo.svg" class="logo" alt="CSS-Minsk-JS Conference logo">
                 <div class="date-place">
                     <div class="date-place__wrapper">
@@ -68,7 +71,7 @@
                     </div>
                 </div>
             </section>
-            <section class="slide slide_speakers" id="our-speakers">
+            <section class="slide wrapper" id="our-speakers">
                 <h2 class="slide__title slide__title-swipe">Our speakers <span class="slide__title-more">(more to be announced…)</span></h2>
                 <div class="speakers">
                     <article class="speakers__item">
@@ -115,7 +118,7 @@
                     </article>
                 </div>
             </section>
-            <section class="slide" id="code-of-conduct">
+            <section class="slide wrapper" id="code-of-conduct">
                 <h2 class="slide__title slide__title-swipe">Code of Conduct </h2>
                 <div class="text-content">
                     <div class="text-content__wrapper">
@@ -129,5 +132,6 @@
             </section>
         </main>
         <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy __mobile">Buy a ticket</a>
+        <script>for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(){document.querySelector(".header__toggle-checkbox").checked=!1});</script>
     </body>
 </html>
