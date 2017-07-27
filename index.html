@@ -49,7 +49,7 @@
         <header class="header">
             <div class="wrapper">
                 <nav>
-                    <a class="header__logo __main __js-menu-link" href="#home" title="CSS-Minsk-JS Conf">CSS-Minsk-JS</a>
+                    <div class="header__logo __main">CSS-Minsk-JS Conf</div>
                     <input type="checkbox" id="menu" class="header__toggle-checkbox">
                     <label for="menu" class="header__toggle-button" id="toggle"><span></span></label>
                     <ul class="header__menu">
@@ -57,7 +57,7 @@
                         <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#our-speakers" title="Speakers">Speakers</a></li>
                         <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a></li>
                     </ul>
-                <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy">Buy a ticket</a>
+                <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy" onclick="ga('send', 'event', 'Buy button', 'click', 'Desktop');">Buy a ticket</a>
                 </nav>
             </div>
         </header>
@@ -119,7 +119,7 @@
                 </div>
             </section>
             <section class="slide wrapper" id="code-of-conduct">
-                <h2 class="slide__title slide__title-swipe">Code of Conduct </h2>
+                <h2 class="slide__title">Code of Conduct </h2>
                 <div class="text-content">
                     <div class="text-content__wrapper">
                         <p class="slide__paragraph">CSS-Minsk-JS is a community conference intended for networking and collaboration in the developer community. We value the participation of each member of the community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events, whether officially sponsored by CSS-Minsk-JS or not. To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at any CSS-Minsk-JS event are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event.</p>
@@ -131,7 +131,9 @@
                 </div>
             </section>
         </main>
-        <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy __mobile">Buy a ticket</a>
-        <script>for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(){document.querySelector(".header__toggle-checkbox").checked=!1});</script>
+        <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy __mobile" onclick="ga('send', 'event', 'Buy button', 'click', 'Mobile');">Buy a ticket</a>
+
+        <script>function onScroll(){var e=document.querySelector(".slide_main").getBoundingClientRect().bottom+window.pageYOffset-menuElement.getBoundingClientRect().height;menuElement.classList.contains(specialClass)&&window.pageYOffset<=e?menuElement.classList.remove(specialClass):window.pageYOffset>e&&menuElement.classList.add(specialClass)}for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(e){document.querySelector(".header__toggle-checkbox").checked=!1});var menuElement=document.querySelector(".header"),specialClass="__logo-visible";onScroll(),document.querySelector(".content").addEventListener("scroll",onScroll);
+        </script>
     </body>
 </html>
