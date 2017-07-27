@@ -187,13 +187,13 @@ body {
 }
 
 .slide {
-    /*height: 100vh;*/
     padding-bottom: 10vh;
     position: relative;
 }
 
 .slide_main {
     width: 120vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
