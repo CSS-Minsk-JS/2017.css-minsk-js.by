@@ -187,7 +187,7 @@ body {
 }
 
 .slide {
-    height: 100vh;
+    /*height: 100vh;*/
     padding-bottom: 10vh;
     position: relative;
 }
@@ -431,7 +431,7 @@ body {
         opacity: 1;
     }
     .slide {
-        height: 100vh;
+        /*height: 100vh;*/
         padding-bottom: 0;
     }
     .slide__title-more {
@@ -460,7 +460,6 @@ body {
     }
     .speakers {
         margin-right: 0;
-        height: 75vh;
         flex-wrap: wrap;
         justify-content: space-around;
     }
