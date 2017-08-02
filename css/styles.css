@@ -434,6 +434,9 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 2vh;
+  }
   .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -488,6 +491,11 @@ body {
   .header__menu-link:hover::before {
     opacity: 1;
   }
+
+  .header__menu-link[href="#home"] {
+    display: none;
+  }
+
   .slide {
     /*height: 100vh;*/
     padding-bottom: 0;
