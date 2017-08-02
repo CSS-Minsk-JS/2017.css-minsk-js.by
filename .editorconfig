@@ -18,6 +18,10 @@ indent_size = 4
 [*.css]
 indent_size = 2
 
+# YAML
+[*.yml]
+indent_size = 2
+
 # Markdown
 [*.md]
 trim_trailing_whitespace = false
