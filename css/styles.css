@@ -375,427 +375,145 @@ body {
   color: var(--color-yellow);
 }
 
-.belarus-facts {
-    position: relative;
-    width: 100vw;
-    margin: 0 -5vw;
+.facts {
+  width: 100%;
 }
-
-.belarus-facts__chk {
-    position: absolute;
-    width: 0;
-    height: 0;
-    appearance: none;
-    opacity: 0;
+.facts__main {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
 }
-
-.belarus-facts::before {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: 125%;
+.facts__list {
+  position: relative;
+  width: 600%;
+  overflow: hidden;
+  display: flex;
+  list-style: none;
 }
-
-.belarus-facts__list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.facts__item {
+  position: relative;
+  width: 16.666%;
 }
-
-.belarus-facts__list-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 600%;
-    height: 100%;
-    transition: transform 350ms;
-    display: flex;
-    list-style: none;
+.fact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
-
-.belarus-facts__item {
-    position: relative;
-    width: 16.666%;
-    height: 100%;
+.fact__pic {
+  display: none;
+  width: 70vh;
+  height: 70vh;
 }
-
-#belarus-fact-2:checked ~ .belarus-facts__list .belarus-facts__list-wrapper {
-    transform: translateX(-16.666%);
+.fact__pic-wrap {
+  width: 100%;
+  height: 32.5vh;
+  transform: skewY(-15.5deg) translateY(15vh);
+  overflow: hidden;
 }
-#belarus-fact-3:checked ~ .belarus-facts__list .belarus-facts__list-wrapper {
-    transform: translateX(-33.333%);
+.fact__pic-cnt {
+  width: 100%;
+  transform: skewY(15.5deg) translateY(-10vh);
 }
-#belarus-fact-4:checked ~ .belarus-facts__list .belarus-facts__list-wrapper {
-    transform: translateX(-50%);
+.fact__desc {
+  position: relative;
+  z-index: 1;
+  width: 70vh;
+  max-width: 100%;
 }
-#belarus-fact-5:checked ~ .belarus-facts__list .belarus-facts__list-wrapper {
-    transform: translateX(-66.666%);
+.fact__desc-wrap {
+  width: 100%;
+  margin: 10vh 0;
+  background-color: #fed91c;
+  transform: skewY(-15.5deg);
+  overflow: hidden;
 }
-#belarus-fact-6:checked ~ .belarus-facts__list .belarus-facts__list-wrapper {
-    transform: translateX(-83.333%);
+.fact__desc-cnt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+  padding: 12.5vh 5vh 0;
+  transform: skewY(15.5deg);
 }
-
-.belarus-fact {
-
+.fact__desc-ttl {
+  height: 2.4em;
+  padding: 0 0 0 3em;
+  font-size: 3.5vh;
+  line-height: 1.2;
+  background-image: url(../img/facts/icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
 }
-
-.belarus-fact__pic {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100%;
-    overflow: hidden;
-    clip-path: polygon(0% 36.5%, 100% 0%, 100% 62.5%, 0% 100%);
+.fact__desc-txt {
+  margin-top: 1em;
+  font-size: 3.5vh;
 }
-
-.belarus-fact__pic-cnt {
-    width: 100%;
+.fact__num {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  font-size: 20vh;
+  color: rgba(255, 255, 255, 0.4);
 }
-
-.belarus-fact__desc {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
+.facts__nav {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  width: 118vh;
+  height: 6vh;
+  transform-origin: 0 100%;
+  transform: translateX(-50%) rotate(-15.5deg);
+  justify-content: center;
+  align-items: center;
 }
-
-.belarus-fact__desc::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 77.5%;
-    transform-origin: 100% 0;
-    transform: skewY(-15.5deg);
-    background-color: #fed91c;
+.facts__nav-arr {
+  display: block;
+  width: 20vh;
+  height: 4vh;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 350ms;
 }
-
-.belarus-fact__desc-wrap {
-    position: relative;
-    padding: 32% 5%;
+.facts__nav-arr::after {
+  content: '';
+  display: block;
+  width: 4vh;
+  height: 4vh;
+  border-style: solid;
+  border-color: currentColor;
+  transform: rotate(45deg);
 }
-
-.belarus-fact__desc-ttl {
-    height: 2.4em;
-    padding: 0.2em 0 0 3em;
-    font-size: 3.5vh;
-    line-height: 1.2;
-    background-image: url(../img/facts/icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: auto 100%;
+.facts__nav-arr:hover,
+.facts__nav-arr:focus {
+  color: #fed91c;
 }
-
-.belarus-fact__desc-txt {
-    margin-top: 1em;
-    font-size: 3.5vh;
+.facts__nav-arr.is-disabled,
+.facts__nav-arr.is-disabled:hover,
+.facts__nav-arr.is-disabled:focus {
+  color: transparent;
+  cursor: default;
 }
-
-.belarus-fact__num {
-    position: absolute;
-    top: 0;
-    right: 5%;
-    font-size: 20vh;
-    color: rgba(255, 255, 255, 0.4);
+.facts__nav-arr_prev::after {
+  margin-left: 16vh;
+  border-width: 0 0 2px 2px;
 }
-
-.belarus-fact__nav {
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    transform-origin: 0 100%;
-    transform: rotate(-15.5deg);
-    display: flex;
-    height: 6vh;
-    justify-content: center;
-    align-items: center;
+.facts__nav-arr_next::after {
+  border-width: 2px 2px 0 0;
 }
-
-.belarus-fact__nav-arr {
-    display: block;
-    width: 4vh;
-    height: 4vh;
-    border-style: solid;
-    border-color: #ccc;
-    transform: rotate(45deg);
-    cursor: pointer;
-    transition: border-color 350ms;
-}
-
-.belarus-fact__nav-arr:hover,
-.belarus-fact__nav-arr:focus {
-    border-color: #fed91c;
-}
-
-.belarus-fact__nav-arr_disabled,
-.belarus-fact__nav-arr_disabled:hover,
-.belarus-fact__nav-arr_disabled:focus {
-    border-color: transparent;
-}
-
-.belarus-fact__nav-arr_prev {
-    border-width: 0 0 2px 2px;
-}
-
-.belarus-fact__nav-arr_next {
-    border-width: 2px 2px 0 0;
-}
-
-.belarus-fact__nav-pos {
-    font-size: 4vh;
+.facts__nav-num {
+  font-size: 4vh;
 }
 
 @media only screen and (min-width: 768px) {
-<<<<<<< HEAD
-    .logo {
-        height: 40vh;
-    }
-    .date-place {
-        height: 18.6vh;
-        top: 4.7vh;
-        font-size: 5vh;
-    }
-    .date-place__wrapper {
-        bottom: -16vh;
-    }
-
-    .belarus-facts::before {
-        padding-top: 95%;
-    }
-    .belarus-fact__desc::before {
-        height: 70%;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (min-device-aspect-ratio: 3/2) {
-    .belarus-facts {
-        margin: 0 auto;
-        width: 175vh;
-        max-width: 100%;
-    }
-    .belarus-facts::before {
-        padding-top: 52.5%;
-    }
-    .belarus-fact__pic {
-        display: block;
-    }
-    .belarus-fact__desc {
-        width: 50%;
-    }
-    .belarus-fact__num {
-        right: auto;
-        left: 40%;
-        width: 10%;
-        text-align: center;
-    }
-    .belarus-fact__nav {
-        width: 10%;
-        right: 70%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        min-width: auto;
-    }
-    .__logo-visible .header__logo {
-        max-width: 12vh;
-    }
-    .header__toggle-button {
-        display: none;
-        visibility: hidden;
-    }
-    .header__menu {
-        display: inline-block;
-    }
-    .header__menu-item {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .header__menu-item+.header__menu-item {
-        margin-left: 1vw;
-    }
-
-    .header__menu-link {
-        color: #000;
-        text-transform: uppercase;
-        font-size: 2vh;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 1.5vh 1vw;
-        display: inline-block;
-        position: relative;
-    }
-    .header__menu-link::before {
-        content: '';
-        position: absolute;
-        display: inline-block;
-        width: 6vw;
-        height: 1.2vh;
-        background-color: #ffd920;
-        z-index: -1;
-        transform: skew(0, -15deg);
-        left: 50%;
-        margin-left: -3vw;
-        margin-top: 0.6vh;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-
-    .header__menu-link:focus::before,
-    .header__menu-link:hover::before {
-        opacity: 1;
-    }
-    .slide {
-        /*height: 100vh;*/
-        padding-bottom: 0;
-    }
-    .slide__title-more {
-        display: inline;
-    }
-    .slide__title-swipe::after {
-        display: none;
-    }
-    .logo {
-        top: 55vh;
-    }
-    .btn-buy {
-        width: 27vh;
-        height: 6vh;
-        border-width: 0.7vh;
-        font-size: 2.5vh;
-        line-height: 5vh;
-        visibility: visible;
-        float: right;
-        margin-top: 2vh;
-        display: block;
-    }
-    .btn-buy.__mobile {
-        display: none;
-        visibility: hidden;
-    }
-    .speakers {
-        margin-right: 0;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .speakers__item {
-        height: auto;
-        margin: 0 0 5vh;
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 28%;
-        background: transparent;
-    }
-    .speakers__img-wrapper {
-        margin-top: 0;
-        margin-bottom: 2vh;
-    }
-    .speakers__img {
-        min-width: 75%;
-        max-width: 75%;
-        border-radius: 50%;
-        position: relative;
-    }
-    .speakers__name {
-        font-size: 3vh;
-    }
-    .speakers__job {
-        font-size: 2vh;
-    }
-    .content__wrapper {
-        height: 70vh;
-    }
-    .text-content__wrapper {
-        overflow-y: auto;
-        column-width: auto;
-    }
-    .slide__subtitle {
-        margin-top: 2.5vh;
-        margin-bottom: 1.5vh;
-        display: inline-block;
-        font-size: 3vh;
-    }
-    .slide__paragraph {
-        font-size: 2.5vh;
-        line-height: 1.3;
-    }
-
-
-    .belarus-facts {
-        margin: 0 auto;
-        width: 175vh;
-        max-width: 100%;
-    }
-    .belarus-facts::before {
-        padding-top: 52.5%;
-    }
-    .belarus-fact__pic {
-        display: block;
-    }
-    .belarus-fact__desc {
-        top: 20%;
-        width: 40%;
-    }
-    .belarus-fact__desc-wrap {
-        padding: 32% 8%;
-    }
-    .belarus-fact__num {
-        top: 20%;
-        right: auto;
-        left: 32%;
-        width: 10%;
-        text-align: center;
-        font-size: 33vh;
-    }
-    .belarus-fact__nav {
-        width: 10%;
-        right: 70%;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    .date-place {
-        font-size: 4.7vh;
-    }
-    .date-place__wrapper {
-        position: static;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .belarus-fact__desc-ttl,
-    .belarus-fact__desc-txt {
-        font-size: 2.5vh;
-    }
-    .belarus-fact__num {
-        font-size: 20vh;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-device-aspect-ratio: 3/2) {
-    .belarus-fact__desc-ttl,
-    .belarus-fact__desc-txt {
-        font-size: 2.5vh;
-    }
-    .belarus-fact__num {
-        font-size: 20vh;
-    }
-}
-=======
   .logo {
     height: 40vh;
   }
@@ -806,6 +524,58 @@ body {
   }
   .date-place__wrapper {
     bottom: -16vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-device-aspect-ratio: 3/2), screen and (min-width: 1200px) {
+  .facts__main {
+    height: auto;
+    overflow: hidden;
+  }
+  .facts__list {
+    overflow: visible;
+    transition: transform 350ms;
+  }
+  .facts__list[data-num="2"] {
+    transform: translateX(-16.666%) translateY(100%);
+  }
+  .facts__list[data-num="3"] {
+    transform: translateX(-33.333%) translateY(200%);
+  }
+  .facts__list[data-num="4"] {
+    transform: translateX(-50%) translateY(300%);
+  }
+  .facts__list[data-num="5"] {
+    transform: translateX(-66.666%) translateY(400%);
+  }
+  .facts__list[data-num="6"] {
+    transform: translateX(-83.333%) translateY(500%);
+  }
+  .facts__item:nth-child(2) {
+    transform: translateY(-100%);
+  }
+  .facts__item:nth-child(3) {
+    transform: translateY(-200%);
+  }
+  .facts__item:nth-child(4) {
+    transform: translateY(-300%);
+  }
+  .facts__item:nth-child(5) {
+    transform: translateY(-400%);
+  }
+  .facts__item:nth-child(6) {
+    transform: translateY(-500%);
+  }
+  .fact__pic {
+    display: block;
+    margin-left: -17.5vh;
+  }
+  .fact__num {
+    margin-right: -3vh;
+    font-size: 33vh;
+  }
+  .facts__nav {
+    display: flex;
   }
 }
 
@@ -955,6 +725,32 @@ body {
   }
   .organizers__item {
     flex-basis: 25%;
+  }
+  .facts__nav {
+    width: auto;
+  } 
+}
+
+@media screen and (min-width: 1200px) and (min-device-aspect-ratio: 3/2), screen and (min-width: 1440px) {
+  .fact {
+    align-items: flex-end;
+  }
+  .fact__pic {
+    width: 122.5vh;
+    height: 84vh;
+  }
+  .fact__pic-wrap {
+    height: 50vh;
+    transform: skewY(-15.5deg) translateY(17vh);
+    overflow: hidden;
+  }
+  .fact__pic-cnt {
+    transform: skewY(15.5deg) translateY(-17vh);
+  }
+  .facts__nav {
+    width: 132vh;
+    margin-bottom: -4vh;
+    justify-content: flex-start;
   }
 }
 
