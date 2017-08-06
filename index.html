@@ -49,14 +49,30 @@
         <header class="header">
             <div class="wrapper">
                 <nav>
-                    <div class="header__logo __main">CSS-Minsk-JS Conf</div>
+                    <a href="#home" class="header__logo __main">CSS-Minsk-JS Conf</a>
                     <input type="checkbox" id="menu" class="header__toggle-checkbox">
-                    <label for="menu" class="header__toggle-button" id="toggle"><span></span></label>
+                    <label for="menu" class="header__toggle-button" id="toggle">
+                        <span class="header__toggle-button-lines"></span>
+                    </label>
                     <ul class="header__menu">
-                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#home" title="Home">Home</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#speakers" title="Speakers">Speakers</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#visit-belarus" title="Speakers">Visit Belarus</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a></li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#home" title="Home">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#speakers" title="Speakers">Speakers</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#visit-belarus" title="Visit Belarus">Visit Belarus</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#organizers" title="Speakers">Organizers</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#partners" title="Speakers">Partners</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a>
+                        </li>
                     </ul>
                 <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy" onclick="ga('send', 'event', 'button', 'click’);">Buy a ticket</a>
                 </nav>
@@ -314,6 +330,84 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </section>
+            <section class="slide wrapper" id="organizers">
+                <h2 class="slide__title">Organizers</h2>
+                <div class="text-content__wrapper">
+                    <p class="slide__paragraph">The conference is organised by 2 tech communities: MinskJS and MinskCSS in cooperation with SPACE and LOVATA. Our main goal is experience and knowledge sharing in international community.</p>
+                </div>
+                <div class="organizers">
+                    <article class="organizers__item">
+                        <a href="http://twitter.com/minskjs" class="organizers__item-link">
+                            <img src="img/minskjs-logo.svg" class="organizers__img" alt="MinskJS">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="http://twitter.com/minskcss" class="organizers__item-link">
+                            <img src="img/minskcss-logo.svg" class="organizers__img" alt="MinskCSS">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="http://eventspace.by" class="organizers__item-link">
+                            <img src="img/space-logo.svg" class="organizers__img" alt="SPACE">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="https://lovata.com" class="organizers__item-link">
+                            <img src="img/lovata-logo.svg" class="organizers__img" alt="LOVATA">
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="slide wrapper" id="partners">
+                <h2 class="slide__title">Info partners</h2>
+                <div class="partners">
+                    <article class="partners__item">
+                        <a href="https://web-standards.ru" class="partners__item-link">
+                            <img src="img/web-standards-logo.svg" class="partners__img" alt="Web Standards">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://frontendweekend.ml" class="partners__item-link">
+                            <img src="img/frontend-weekend-logo.svg" class="partners__img" alt="Frontend Weekend">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/4frontby/" class="partners__item-link">
+                            <img src="img/4front-logo.png" class="partners__img" alt="4front">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://webnotbombs.net" class="partners__item-link">
+                            <img src="img/web-not-bombs-logo.svg" class="partners__img" alt="Web Not Bombs">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://rollingscopes.com" class="partners__item-link">
+                            <img src="img/the-rolling-scopes-logo.svg" class="partners__img" alt="The Rolling Scopes">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://kyivjs.org" class="partners__item-link">
+                            <img src="img/kyivjs-logo.svg" class="partners__img" alt="KyivJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://css.moscow" class="partners__item-link">
+                            <img src="img/moscowcss-logo.svg" class="partners__img" alt="MoscowCSS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.moscowjs.ru" class="partners__item-link">
+                            <img src="img/moscowjs-logo.svg" class="partners__img" alt="MoscowJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://spb-frontend.ru" class="partners__item-link">
+                            <img src="img/spb-frontend-logo.png" class="partners__img" alt="SPB Frontend">
+                        </a>
+                    </article>
                 </div>
             </section>
             <section class="slide wrapper" id="code-of-conduct">

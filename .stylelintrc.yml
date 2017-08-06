@@ -1,0 +1,601 @@
+ignoreFiles:
+    - node_modules/**/*
+    - packages/**/node_modules/**/*
+    - build/**/*
+plugins:
+    - stylelint-suitcss
+    #- stylelint-no-unsupported-browser-features
+    - stylelint-declaration-use-variable
+    - stylelint-order
+    - stylelint-selector-bem-pattern
+rules:
+  suitcss/root-no-standard-properties: true
+  suitcss/selector-root-no-composition: true
+
+  # plugin/no-unsupported-browser-features:
+  #   - true
+  #   - severity:
+  #     - warning
+
+  sh-waqar/declaration-use-variable:
+    - /color/
+    - severity:
+        - warning
+    - /font/
+    - severity:
+      - warning
+    - /fill/
+    - severity:
+      - warning
+
+  order/order:
+    - custom-properties
+    - declarations
+
+  order/properties-order:
+    # Dimensions
+    - width
+    - min-width
+    - max-width
+    - height
+    - min-height
+    - max-height
+
+    # Boxes
+    - margin
+    - margin-top
+    - margin-right
+    - margin-bottom
+    - margin-left
+    - padding
+    - padding-top
+    - padding-right
+    - padding-bottom
+    - padding-left
+    - border
+    - border-top
+    - border-right
+    - border-bottom
+    - border-left
+    - border-width
+    - border-top-width
+    - border-right-width
+    - border-bottom-width
+    - border-left-width
+    - border-style
+    - border-top-style
+    - border-right-style
+    - border-bottom-style
+    - border-left-style
+    - border-radius
+    - border-top-left-radius
+    - border-top-right-radius
+    - border-bottom-left-radius
+    - border-bottom-right-radius
+    - border-color
+    - border-top-color
+    - border-right-color
+    - border-bottom-color
+    - border-left-color
+
+    # Display and positioning
+    - display
+    - flex
+    - flex-basis
+    - flex-direction
+    - flex-flow
+    - flex-grow
+    - flex-shrink
+    - flex-wrap
+    - align-content
+    - align-items
+    - align-self
+    - justify-content
+    - order
+    - position
+    - top
+    - right
+    - bottom
+    - left
+    - z-index
+    - float
+    - clear
+    - overflow
+    - overflow-x
+    - overflow-y
+    - overflow-wrap
+    - visibility
+    - clip
+    - object-fit
+    - vertical-align
+
+    # Visual
+
+    # Columns
+    - columns
+    - column-count
+    - column-fill
+    - column-gap
+    - column-rule
+    - column-rule-color
+    - column-rule-style
+    - column-rule-width
+    - column-span
+    - column-width
+
+    # Typography
+    - font
+    - font-family
+    - src
+    - font-size
+    - font-smoothing
+    - font-style
+    - font-variant
+    - font-weight
+    - letter-spacing
+    - line-height
+    - text-align
+    - text-align-last
+    - text-decoration
+    - text-indent
+    - text-justify
+    - text-overflow
+    - text-rendering
+    - text-shadow
+    - text-outline
+    - text-transform
+    - white-space
+    - word-spacing
+    - word-break
+    - word-wrap
+    - hanging-punctuation
+
+    # Tables
+    - caption-side
+    - table-layout
+    - border-collapse
+    - border-spacing
+    - empty-cells
+
+    # Transitions
+    - transition
+    - transition-delay
+    - transition-duration
+    - transition-property
+    - transition-timing-function
+
+    # Transformations
+    - backface-visibility
+    - perspective
+    - perspective-origin
+    - transform
+    - transform-origin
+    - transform-style
+
+    # Animations
+    - animation
+    - animation-delay
+    - animation-direction
+    - animation-duration
+    - animation-iteration-count
+    - animation-fill-mode
+    - animation-name
+    - animation-play-state
+    - animation-timing-function
+
+    # Generated content
+    - content
+    - counter-reset
+    - counter-increment
+    - quotes
+    - list-style
+    - list-style-type
+    - list-style-position
+    - list-style-image
+    - hyphens
+
+    # Color
+    - color
+    - opacity
+    - text-fill-color
+    - text-stroke
+    - text-stroke-width
+    - text-stroke-color
+    - filter
+
+    # Background
+    - background
+    - background-attachment
+    - background-clip
+    - background-color
+    - background-image
+    - background-repeat
+    - background-position
+    - background-size
+    - box-shadow
+    - mix-blend-mode
+    - fill
+
+    # UI
+    - appearance
+    - cursor
+    - resize
+    - user-select
+    - pointer-events
+    - outline
+    - outline-color
+    - outline-offset
+    - outline-style
+    - outline-width
+    - scroll-behavior
+    - scroll-snap-points-x
+    - scroll-snap-type
+
+  plugin/selector-bem-pattern:
+    componentName: ^[a-z]+(?:-[a-z]+)*$
+    # <namespace>-<block>__<element>*--<modifier>*[<attribute>]*
+    componentSelectors: ^\.mdc?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
+    ignoreSelectors:
+      - ^fieldset
+      - ^\[aria\-disabled=(?:.+)\]
+
+  indentation: 2
+  max-empty-lines: 1
+  max-line-length: 100
+  max-nesting-depth: 3
+  no-missing-end-of-source-newline: true
+  no-unknown-animations: true
+  no-empty-source: true
+  no-extra-semicolons: true
+  time-min-milliseconds: 100
+  declaration-no-important: true
+  no-duplicate-selectors: true
+  no-eol-whitespace: true
+  no-descending-specificity: true
+  rule-empty-line-before: never-multi-line
+
+  comment-no-empty: true
+  comment-whitespace-inside: always
+  comment-word-blacklist:
+    -
+      - /^TODO:/
+      - /^FIXME:/
+    - severity: warning
+
+  selector-max-id: 0
+  selector-max-attribute: 0
+  selector-max-type:
+      - 0
+      - ignoreTypes:
+        - /html/
+        - /body/
+  selector-max-compound-selectors: 4
+  selector-no-qualifying-type: true
+  selector-no-vendor-prefix: true
+  selector-descendant-combinator-no-non-space: true
+  selector-pseudo-class-case: lower
+  selector-pseudo-element-case: lower
+  selector-pseudo-element-colon-notation: double
+  selector-pseudo-element-no-unknown: true
+  selector-pseudo-class-parentheses-space-inside: never
+  selector-pseudo-class-no-unknown: true
+  selector-combinator-space-after: always
+  selector-combinator-space-before: always
+  selector-list-comma-space-before: never
+  selector-list-comma-newline-after: always
+  selector-max-empty-lines: 0
+  selector-max-specificity: 0,2,1
+  selector-attribute-quotes: always
+
+  block-opening-brace-space-before: always
+  block-opening-brace-newline-after: always
+  block-closing-brace-empty-line-before: never
+  block-closing-brace-newline-before: always
+  block-closing-brace-newline-after: always
+  block-no-empty: true
+
+  declaration-block-no-duplicate-properties: true
+  declaration-block-no-shorthand-property-overrides: true
+  declaration-colon-space-before: never
+  declaration-colon-space-after: always
+  declaration-bang-space-before: always
+  declaration-bang-space-after: never
+  declaration-block-semicolon-space-before: never
+  declaration-block-semicolon-newline-after: always
+  declaration-block-trailing-semicolon: always
+  declaration-empty-line-before: never
+
+  property-case: lower
+  property-no-vendor-prefix: true
+  property-no-unknown:
+    - true
+    - ignoreProperties:
+        - contain
+  property-whitelist:
+    # Dimensions
+    - width
+    - min-width
+    - max-width
+    - height
+    - min-height
+    - max-height
+
+    # Boxes
+    - margin
+    - margin-top
+    - margin-right
+    - margin-bottom
+    - margin-left
+    - padding
+    - padding-top
+    - padding-right
+    - padding-bottom
+    - padding-left
+    - border
+    - border-top
+    - border-right
+    - border-bottom
+    - border-left
+    - border-width
+    - border-top-width
+    - border-right-width
+    - border-bottom-width
+    - border-left-width
+    - border-style
+    - border-top-style
+    - border-right-style
+    - border-bottom-style
+    - border-left-style
+    - border-radius
+    - border-top-left-radius
+    - border-top-right-radius
+    - border-bottom-left-radius
+    - border-bottom-right-radius
+    - border-color
+    - border-top-color
+    - border-right-color
+    - border-bottom-color
+    - border-left-color
+
+    # Display and positioning
+    - display
+    - flex
+    - flex-basis
+    - flex-direction
+    - flex-flow
+    - flex-grow
+    - flex-shrink
+    - flex-wrap
+    - align-content
+    - align-items
+    - align-self
+    - justify-content
+    - order
+    - position
+    - top
+    - right
+    - bottom
+    - left
+    - z-index
+    - float
+    - clear
+    - overflow
+    - overflow-x
+    - overflow-y
+    - overflow-wrap
+    - visibility
+    - clip
+    - object-fit
+    - vertical-align
+
+    # Visual
+
+    # Columns
+    - columns
+    - column-count
+    - column-fill
+    - column-gap
+    - column-rule
+    - column-rule-color
+    - column-rule-style
+    - column-rule-width
+    - column-span
+    - column-width
+
+    # Typography
+    - font
+    - font-family
+    - src
+    - font-size
+    - font-smoothing
+    - font-style
+    - font-variant
+    - font-weight
+    - letter-spacing
+    - line-height
+    - text-align
+    - text-align-last
+    - text-decoration
+    - text-indent
+    - text-justify
+    - text-overflow
+    - text-rendering
+    - text-shadow
+    - text-outline
+    - text-transform
+    - white-space
+    - word-spacing
+    - word-break
+    - word-wrap
+    - hanging-punctuation
+
+    # Tables
+    - caption-side
+    - table-layout
+    - border-collapse
+    - border-spacing
+    - empty-cells
+
+    # Transitions
+    - transition
+    - transition-delay
+    - transition-duration
+    - transition-property
+    - transition-timing-function
+
+    # Transformations
+    - backface-visibility
+    - perspective
+    - perspective-origin
+    - transform
+    - transform-origin
+    - transform-style
+
+    # Animations
+    - animation
+    - animation-delay
+    - animation-direction
+    - animation-duration
+    - animation-iteration-count
+    - animation-fill-mode
+    - animation-name
+    - animation-play-state
+    - animation-timing-function
+
+    # Generated content
+    - content
+    - counter-reset
+    - counter-increment
+    - quotes
+    - list-style
+    - list-style-type
+    - list-style-position
+    - list-style-image
+    - hyphens
+
+    # Color
+    - color
+    - opacity
+    - text-fill-color
+    - text-stroke
+    - text-stroke-width
+    - text-stroke-color
+    - filter
+
+    # Background
+    - background
+    - background-attachment
+    - background-clip
+    - background-color
+    - background-image
+    - background-repeat
+    - background-position
+    - background-size
+    - box-shadow
+    - mix-blend-mode
+    - fill
+
+    # UI
+    - appearance
+    - cursor
+    - resize
+    - user-select
+    - pointer-events
+    - outline
+    - outline-color
+    - outline-offset
+    - outline-style
+    - outline-width
+    - scroll-behavior
+    - scroll-snap-points-x
+    - scroll-snap-type
+
+  property-blacklist:
+    - animation
+    - background
+    - border
+    - columns
+    - flex
+    - font
+    - margin
+    - outline
+    - padding
+
+  custom-property-empty-line-before: never
+
+  value-keyword-case: lower
+  value-no-vendor-prefix: true
+  declaration-property-value-blacklist:
+    border:
+      - /0/
+    src:
+      - /.eot/
+      - /.ttf/
+      - /.svg/
+
+  string-no-newline: true
+  string-quotes: double
+
+  number-leading-zero: always
+  number-max-precision: 4
+  number-no-trailing-zeros: true
+
+  unit-blacklist:
+    - pt
+    - cm
+    - mm
+    - in
+    - pc
+  unit-case: lower
+  declaration-property-unit-whitelist:
+    font-size:
+      - "rem"
+      - "px"
+      - "vh" # Before implementing https://css-tricks.com/molten-leading-css/
+    /^animation/:
+      - "ms"
+
+  length-zero-no-unit: true,
+
+  color-hex-case: lower
+  color-hex-length: long
+  color-named: never
+  color-no-invalid-hex: true
+
+  font-family-name-quotes: always-where-recommended
+  font-family-no-duplicate-names: true
+  font-weight-notation: named-where-possible
+
+  function-name-case: lower
+  function-parentheses-space-inside: never
+  function-comma-space-after: always
+  function-comma-space-before: never
+  function-whitespace-after: always
+  function-url-scheme-blacklist:
+    - ftp
+    - /^http/
+    - /^data/
+  function-url-quotes: always
+  function-linear-gradient-no-nonstandard-direction: true
+  function-calc-no-unspaced-operator: true
+
+  value-list-comma-space-after: always
+  value-list-comma-space-before: never
+
+  at-rule-no-unknown: true
+  at-rule-no-vendor-prefix: true
+  at-rule-name-case: lower
+  at-rule-name-space-after: always
+  at-rule-semicolon-space-before: never
+
+  media-feature-name-no-unknown: true
+  media-feature-name-no-vendor-prefix: true
+  media-feature-parentheses-space-inside: never
+  media-feature-name-case: lower
+  media-feature-colon-space-after: always
+  media-feature-colon-space-before: never
+  media-feature-range-operator-space-after: always
+  media-feature-range-operator-space-before: always
+
+  media-query-list-comma-newline-before: never-multi-line
+  media-query-list-comma-newline-after: always
