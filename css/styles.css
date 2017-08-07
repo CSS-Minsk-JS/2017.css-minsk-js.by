@@ -377,6 +377,7 @@ body {
 
 .facts {
   width: 100%;
+  margin-top: -5vh;
 }
 .facts__main {
   position: relative;
@@ -728,10 +729,16 @@ body {
   }
   .facts__nav {
     width: auto;
-  } 
+  }
+  .slide__title {
+    margin-bottom: 3vh;
+    padding-top: 3vh;
+    font-size: 4vh;
+  }
 }
 
-@media screen and (min-width: 1200px) and (min-device-aspect-ratio: 3/2), screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) and (min-device-aspect-ratio: 3/2),
+  screen and (min-width: 1440px) {
   .fact {
     align-items: flex-end;
   }
