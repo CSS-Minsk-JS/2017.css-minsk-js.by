@@ -606,9 +606,6 @@ body {
     display: inline-block;
     vertical-align: middle;
   }
-  .header__menu-item + .header__menu-item {
-    margin-left: 1vw;
-  }
   .header__menu-link {
     padding: 1.5vh 1vw;
     display: inline-block;
@@ -773,5 +770,9 @@ body {
     justify-content: center;
     position: static;
     text-align: left;
+  }
+  .header__menu-link {
+    padding-right: 0.8vw;
+    padding-left: 0.8vw;
   }
 }
