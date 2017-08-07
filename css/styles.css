@@ -418,6 +418,8 @@ body {
 .fact__pic-cnt {
   width: 100%;
   transform: skewY(15.5deg) translateY(-10vh);
+  position: relative;
+  top: -3vh;
 }
 .fact__desc {
   position: relative;
@@ -453,7 +455,7 @@ body {
 }
 .fact__desc-txt {
   margin-top: 1em;
-  font-size: 3.5vh;
+  font-size: 3vh;
 }
 .fact__num {
   position: absolute;
@@ -748,8 +750,8 @@ body {
   }
   .fact__pic-wrap {
     height: 50vh;
-    transform: skewY(-15.5deg) translateY(17vh);
     overflow: hidden;
+    transform: skewY(-15.5deg) translateY(17vh);
   }
   .fact__pic-cnt {
     transform: skewY(15.5deg) translateY(-17vh);
