@@ -62,6 +62,9 @@
                             <a class="header__menu-link __js-menu-link" href="#speakers" title="Speakers">Speakers</a>
                         </li>
                         <li class="header__menu-item">
+                            <a class="header__menu-link __js-menu-link" href="#visit-belarus" title="Visit Belarus">Visit Belarus</a>
+                        </li>
+                        <li class="header__menu-item">
                             <a class="header__menu-link __js-menu-link" href="#organizers" title="Speakers">Organizers</a>
                         </li>
                         <li class="header__menu-item">
@@ -188,6 +191,110 @@
                     </article>
                 </div>
             </section>
+            <section class="slide wrapper" id="visit-belarus">
+                <h2 class="slide__title slide__title-swipe">Visit Belarus</h2>
+                <div class="facts">
+                    <div class="facts__main __js-facts__main">
+                        <ul class="facts__list __js-facts__list">
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">The Silicon Valley of Eastern Europe</h3>
+                                                <p class="fact__desc-txt">The Wall Street Journal named Belarus’ Hi-Tech Park ‘the Silicon Valley of Eastern Europe’</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">1</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="img/facts/hi-tech-park.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Minsk’s 950th Anniversary</h3>
+                                                <p class="fact__desc-txt">Minsk will celebrate its 950th anniversary on September 9th, 2017. There will be a huge party citywide!</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">2</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="img/facts/minsk-950th-anniversary.jpg" alt="Hi-Tech Park">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Visa-Free Travel</h3>
+                                                <p class="fact__desc-txt">No visa is required if you arrive to and depart from the Minsk National Airport when traveling to Belarus for the period of up to five calendar days.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">3</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="img/facts/no-visa-entry.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Delicious National Cuisine</h3>
+                                                <p class="fact__desc-txt">A unique feature of the Belarusian national cuisine is a huge variety of cold soups and potato dishes.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">4</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="img/facts/national-cuisine.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Large Developers’ Community</h3>
+                                                <p class="fact__desc-txt">Minsk has a really strong front-end developers’ community. We have around half a dozen regular local front-end meetups, including MinskJS and MinskCSS.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">5</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="img/facts/front-end-community.jpg" alt="Minsk CSS / Minsk JS">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="facts__nav">
+                        <span class="facts__nav-arr facts__nav-arr_prev is-disabled __js-facts__nav-arr_prev"></span>
+                        <b class="facts__nav-num"><span class="__js-facts__nav-num">1</span>/5</b>
+                        <span class="facts__nav-arr facts__nav-arr_next __js-facts__nav-arr_next"></span>
+                    </div>
+                </div>
+            </section>
             <section class="slide wrapper" id="organizers">
                 <h2 class="slide__title">Organizers</h2>
                 <div class="text-content__wrapper">
@@ -214,6 +321,7 @@
                             <img src="img/lovata-logo.svg" class="organizers__img" alt="LOVATA">
                         </a>
                     </article>
+                </div>
             </section>
             <section class="slide wrapper" id="partners">
                 <h2 class="slide__title">Info partners</h2>
@@ -282,5 +390,46 @@
 
         <script>function onScroll(){var e=document.querySelector(".slide_main").getBoundingClientRect().bottom+window.pageYOffset-menuElement.getBoundingClientRect().height;menuElement.classList.contains(specialClass)&&window.pageYOffset<=e?menuElement.classList.remove(specialClass):window.pageYOffset>e&&menuElement.classList.add(specialClass)}for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(e){document.querySelector(".header__toggle-checkbox").checked=!1});var menuElement=document.querySelector(".header"),specialClass="__logo-visible";onScroll(),document.querySelector(".content").addEventListener("scroll",onScroll);
         </script>
+        <script>
+            var factIndex = 0;
+            var factsCount = 5;
+            function gotoFact() {
+                document.querySelector(".__js-facts__list").setAttribute("data-num", factIndex+1);
+                document.querySelector(".__js-facts__nav-num").innerHTML = factIndex+1;
+            }
+            function resetFactsArrows() {
+                var arrow = document.querySelector(".__js-facts__nav-arr_prev");
+                if (factIndex == 0) {
+                    arrow.classList.add("is-disabled");
+                } else {
+                    arrow.classList.remove("is-disabled");
+                }
+                arrow = document.querySelector(".__js-facts__nav-arr_next");
+                if (factIndex == factsCount - 1) {
+                    arrow.classList.add("is-disabled");
+                } else {
+                    arrow.classList.remove("is-disabled");
+                }
+            }
+            document.querySelector(".__js-facts__nav-arr_prev").addEventListener("click", function() {
+                if (factIndex == 0) return;
+                factIndex--;
+                gotoFact();
+                resetFactsArrows();
+            });
+            document.querySelector(".__js-facts__nav-arr_next").addEventListener("click", function() {
+                if (factIndex == factsCount - 1) return;
+                factIndex++;
+                gotoFact();
+                resetFactsArrows();
+            });
+            window.addEventListener("resize", function() {
+                document.querySelector(".__js-facts__main").scrollLeft = 0;
+                factIndex = 0;
+                gotoFact();
+                resetFactsArrows();
+            });
+        </script>
+        <script src="js/scroll-snap-polyfill.js"></script>
     </body>
 </html>
