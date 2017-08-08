@@ -430,7 +430,7 @@ body {
 .fact__desc-wrap {
   width: 100%;
   margin: 10vh 0;
-  background-color: #fed91c;
+  background-color: var(--color-yellow);
   transform: skewY(-15.5deg);
   overflow: hidden;
 }
@@ -497,7 +497,7 @@ body {
 }
 .facts__nav-arr:hover,
 .facts__nav-arr:focus {
-  color: #fed91c;
+  color: var(--color-yellow);
 }
 .facts__nav-arr.is-disabled,
 .facts__nav-arr.is-disabled:hover,
@@ -515,6 +515,42 @@ body {
 .facts__nav-num {
   font-size: 4vh;
 }
+
+.about {
+  font-size: 4vh;
+  line-height: 1.3;
+}
+.about p {
+  margin-top: 1em;
+}
+.about a {
+  text-decoration: none;
+  color: inherit;
+  background-image: linear-gradient(#fff 50%, var(--color-gray) 50%);
+  background-repeat: repeat-x;
+  background-position: 0 0.9em;
+  background-size: 0.3em 0.3em;
+}
+.about a:hover,
+.about a:focus {
+  background-image: linear-gradient(#fff 50%, var(--color-yellow) 50%);
+}
+.about ul {
+  margin-left: 2em;
+  list-style: none;
+}
+.about li {
+  text-indent: -2em;
+}
+.about li::before {
+  display: inline-block;
+  width: 0.5em;
+  color: var(--color-gray);
+  text-align: right;
+  padding-right: 0.5em;
+  content: '–';
+}
+
 
 @media only screen and (min-width: 768px) {
   .logo {
@@ -733,6 +769,10 @@ body {
     margin-bottom: 3vh;
     padding-top: 3vh;
     font-size: 4vh;
+  }
+  .about {
+    font-size: 2.5vh;
+    line-height: 1.3;
   }
 }
 
