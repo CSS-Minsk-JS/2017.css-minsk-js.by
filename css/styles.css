@@ -323,7 +323,7 @@ body {
 .partners__item {
   margin-top: 5vh;
   display: flex;
-  flex-basis: 33.333%;
+  flex-basis: 25%;
   align-items: center;
   justify-content: center;
 }
@@ -762,7 +762,7 @@ body {
     justify-content: flex-start;
   }
   .partners__item {
-    flex-basis: 20%;
+    flex-basis: 12.5%;
   }
   .organizers__item {
     flex-basis: 25%;
