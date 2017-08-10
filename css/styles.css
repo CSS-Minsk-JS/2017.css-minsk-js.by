@@ -4,6 +4,7 @@
   --color-gray-dark: #302f2f;
   --color-white: #ffffff;
   --color-yellow: #fed91c;
+  --width-content: 840px;
 }
 @font-face {
   font-family: "PT Astra Sans";
@@ -217,14 +218,9 @@ body {
   visibility: visible;
 }
 .text-content {
-  min-width: 90%;
-  margin-right: 5%;
-  margin-bottom: 12vh;
-  margin-left: 5%;
-}
-.text-content__wrapper {
-  margin-bottom: 5vh;
-  display: inline-block;
+  width: 90%;
+  max-width: var(--width-content);
+  margin: 0 auto 12vh;
 }
 .logo {
   height: 34vh;
@@ -280,6 +276,10 @@ body {
 .slide__paragraph {
   font-size: 4vh;
   line-height: 1.3;
+}
+.slide__brief {
+  max-width: var(--width-content);
+  margin: 0 auto 5vh;
 }
 .speakers {
   margin-right: 0.1%;
@@ -517,7 +517,7 @@ body {
 }
 
 .about {
-  max-width: 740px;
+  max-width: var(--width-content);
   margin: 0 auto;
   font-size: 4vh;
   line-height: 1.3;
@@ -555,6 +555,25 @@ body {
 
 .partners-offer {
   display: none;
+}
+
+.footer {
+  border-top: 1px solid #efefef;
+  font-size: 2.5vh;
+  line-height: 1.3;
+  color: var(--color-gray);
+}
+.footer__wrapper {
+  width: 90%;
+  max-width: var(--width-content);
+  margin: 0 auto 12vh;
+}
+.footer p {
+  margin: 1em 0;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (min-width: 768px) {
@@ -777,7 +796,6 @@ body {
   }
   .about {
     font-size: 2.5vh;
-    line-height: 1.3;
   }
   .partners-offer {
     position: absolute;
@@ -810,6 +828,10 @@ body {
   .partners-offer:focus span {
     background-color: var(--color-yellow);
     color: white;
+  }
+
+  .footer__wrapper {
+    margin-bottom: 0;
   }
 }
 
