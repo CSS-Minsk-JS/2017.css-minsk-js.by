@@ -472,6 +472,5 @@
         </script>
         <script>function gotoFact(){document.querySelector(".__js-facts__list").setAttribute("data-num",factIndex+1),document.querySelector(".__js-facts__nav-num").innerHTML=factIndex+1}function resetFactsArrows(){var t=document.querySelector(".__js-facts__nav-arr_prev");0==factIndex?t.classList.add("is-disabled"):t.classList.remove("is-disabled"),t=document.querySelector(".__js-facts__nav-arr_next"),factIndex==factsCount-1?t.classList.add("is-disabled"):t.classList.remove("is-disabled")}var factIndex=0,factsCount=5;document.querySelector(".__js-facts__nav-arr_prev").addEventListener("click",function(){0!=factIndex&&(factIndex--,gotoFact(),resetFactsArrows())}),document.querySelector(".__js-facts__nav-arr_next").addEventListener("click",function(){factIndex!=factsCount-1&&(factIndex++,gotoFact(),resetFactsArrows())}),window.addEventListener("resize",function(){document.querySelector(".__js-facts__main").scrollLeft=0,factIndex=0,gotoFact(),resetFactsArrows()});
         </script>
-        <script src="js/scroll-snap-polyfill.js"></script>
     </body>
 </html>
