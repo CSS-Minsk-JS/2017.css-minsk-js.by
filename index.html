@@ -10,7 +10,7 @@
         <meta property="og:url" content="http://css-minsk-js.by" />
         <meta property="og:image" content="http://css-minsk-js.by/img/og-img.png" />
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/styles.css?v=1.4">
+        <link rel="stylesheet" href="css/styles.css?v=1.5">
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,7 +53,7 @@
     <body>
         <header class="header">
             <div class="wrapper">
-                <nav>
+                <nav class="nav">
                     <a href="#home" class="header__logo __main">CSS-Minsk-JS Conf</a>
                     <input type="checkbox" id="menu" class="header__toggle-checkbox">
                     <label for="menu" class="header__toggle-button" id="toggle">
@@ -79,7 +79,17 @@
                             <a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a>
                         </li>
                     </ul>
-                <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy" onclick="ga('send', 'event', 'button', 'click’);">Buy a ticket</a>
+                    <div class="tickets" tabindex="1">
+                        <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy" onclick="ga('send', 'event', 'button', 'click’);" tabindex="1">Buy a ticket</a>
+                        <div class="tickets__toggle-wrap">
+                            <span class="tickets__toggle-link">Tickets for companies</span>
+                        </div>
+                        <div class="tickets__tooltip">
+                            <p class="tickets__tooltip-text">
+                                If you wish to buy tickets for your employees, please, contact us at <a class="link" href="mailto:daria@eventspace.by">daria@eventspace.by</a>, +375297393416 
+                            </p>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -109,10 +119,10 @@
                         Our main goal is experience and knowledge sharing in international community. We support ideas of open web, opensource software and free access to knowledge.
                     </p>
                     <p>
-                        The conference is organised by 2 tech communities: <a href="https://www.facebook.com/MinskJS/"><strong>MinskJS</strong></a> and <a href="https://www.facebook.com/groups/MinskCSS/"><strong>MinskCSS</strong></a>.
+                        The conference is organised by 2 tech communities: <a class="link" href="https://www.facebook.com/MinskJS/"><strong>MinskJS</strong></a> and <a class="link" href="https://www.facebook.com/groups/MinskCSS/"><strong>MinskCSS</strong></a>.
                     </p>
                     <p>
-                        Join us on <a href="https://www.facebook.com/cssminskjs/">Facebook</a> and on twitter <a href="https://twitter.com/CSS_Minsk_JS">@CSS_Minsk_JS</a> to get all the freshest updates. The official hashtag is #cssminskjs.
+                        Join us on <a class="link" href="https://www.facebook.com/cssminskjs/">Facebook</a> and on twitter <a class="link" href="https://twitter.com/CSS_Minsk_JS">@CSS_Minsk_JS</a> to get all the freshest updates. The official hashtag is #cssminskjs.
                     </p>
                 </article>
             </section>
@@ -457,7 +467,6 @@
                 </div>
             </footer>
         </main>
-        <a href="https://bezkassira.by/css-minsk-js-2755/" target="_blank" class="btn-buy __mobile" onclick="ga('send', 'event', 'Buy button', 'click', 'Mobile');">Buy a ticket</a>
 
         <script>function onScroll(){var e=document.querySelector(".slide_main").getBoundingClientRect().bottom+window.pageYOffset-menuElement.getBoundingClientRect().height;menuElement.classList.contains(specialClass)&&window.pageYOffset<=e?menuElement.classList.remove(specialClass):window.pageYOffset>e&&menuElement.classList.add(specialClass)}for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(e){document.querySelector(".header__toggle-checkbox").checked=!1});var menuElement=document.querySelector(".header"),specialClass="__logo-visible";onScroll(),document.querySelector(".content").addEventListener("scroll",onScroll);
         </script>
