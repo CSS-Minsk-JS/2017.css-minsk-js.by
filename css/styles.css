@@ -172,6 +172,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 .slide {
   padding-top: 10vh;
@@ -347,6 +348,7 @@ body {
   scroll-behavior: smooth;
   scroll-snap-points-x: repeat(100%);
   scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .speakers__item {
   height: 85vh;
@@ -446,6 +448,7 @@ body {
   scroll-behavior: smooth;
   scroll-snap-points-x: repeat(100%);
   scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .facts__list {
   position: relative;
