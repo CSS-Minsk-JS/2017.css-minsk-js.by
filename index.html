@@ -10,7 +10,7 @@
         <meta property="og:url" content="http://css-minsk-js.by" />
         <meta property="og:image" content="http://css-minsk-js.by/img/og-img.png" />
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/styles.css?v=1.6">
+        <link rel="stylesheet" href="css/styles.css?v=1.8">
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,7 +64,7 @@
                             <a class="header__menu-link __js-menu-link" href="#home" title="Home">Home</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link __js-menu-link" href="#speakers" title="Speakers">Speakers</a>
+                            <a class="header__menu-link __js-menu-link" href="#schedule" title="Schedule">Schedule</a>
                         </li>
                         <li class="header__menu-item">
                             <a class="header__menu-link __js-menu-link" href="#visit-belarus" title="Visit Belarus">Visit Belarus</a>
@@ -126,108 +126,321 @@
                     </p>
                 </article>
             </section>
-            <section class="slide wrapper" id="speakers">
-                <h2 class="slide__title slide__title-swipe">Our speakers</h2>
-                <div class="speakers">
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-hospodarets.jpg" class="speakers__img" alt="Serg Hospodarets">
+            <section class="slide wrapper" id="schedule">
+                <h2 class="slide__title">Schedule</h2>
+                <ul class="schedule">
+                    <li class="schedule__time">9:00</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Registration. Welcome coffee
+                    </li>
+                    
+                    <li class="schedule__time">9:50</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Opening. Welcome speech
+                    </li>
+
+                    <li class="schedule__time">10:00</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream schedule-stream_double">
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-roberts.jpg" class="schedule-talk__photo-img" alt="Harry Roberts">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Harry Roberts</div>
+                                <div class="schedule-talk__speaker-job">Consultant Front-end Architect<br>CSS Wizardry</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Why Fast Matters</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>We’re all — I hope! — well aware that performance is important; it’s great for business and it’s great for our users. But things are still not fast enough. With more and more emerging markets coming online, and more and more apps moving to the web platform, we’re reaching an intersection where connections are getting slower and websites are getting heavier. In this talk, we’ll learn just what these emerging markets mean to us, and how we can begin to move in the right direction.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Serg Hospodarets</strong><br>
-                        <span class="speakers__job">Lead Front-end Developer<br>Guidewire Software</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-giraudel.jpg" class="speakers__img" alt="Hugo Giraudel">
+                    </li>
+
+                    <li class="schedule__time">10:40</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Technical break
+                    </li>
+
+                    <li class="schedule__time">11:00</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-matuzovic.jpg" class="schedule-talk__photo-img" alt="Manuel Matuzovic">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Manuel Matuzovic</div>
+                                <div class="schedule-talk__speaker-job">Front-end Developer<br>Freelancer</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Designed for Inclusion: Writing CSS with Accessibility in&nbsp;Mind</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Web accessibility has so many facets, that learning about it and implementing it correctly may seem daunting to some of us. Just imagine excluding a whole group of users by simply declaring `* { outline: none; }`.</p>
+                                        <p>The good news, though, is that CSS has a lot to offer that may help us create accessible web sites and web apps. This talk aims to demystify web accessibility and provide you with simple and practical CSS tips and tricks, which you can easily incorporate into your workflow today. You are going to find out how to make your web projects more inclusive and improve the usability and user experience at the same time.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Hugo Giraudel</strong><br>
-                        <span class="speakers__job">Accessibility Advocate<br>N26</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-roberts.jpg" class="speakers__img" alt="Harry Roberts">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-okhrimenko.jpg" class="schedule-talk__photo-img" alt="Aleksey Okhrimenko">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Aleksey Okhrimenko</div>
+                                <div class="schedule-talk__speaker-job">Senior JavaScript Developer<br>IPONWEB</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">I18N - you doing it wrong!.. probably…</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>The way I was doing internationalization in my JS apps was "standard" and really primitive. When I discovered how to do internationalization professionally I was really shocked. At that point I knew nothing, but I learned a lot. Right now I want to share this knowledge with you. This talk will help you understand how to do I18N professionally and how it's related with ECMA-402 standard.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Harry Roberts</strong><br>
-                        <span class="speakers__job">Consultant Front-end Architect<br>CSS Wizardry</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-naplocha.jpg" class="speakers__img" alt="Aga Naplocha">
+                    </li>
+
+                    <li class="schedule__time">11:40</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Coffee break
+                    </li>
+
+                    <li class="schedule__time">12:00</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-giraudel.jpg" class="schedule-talk__photo-img" alt="Hugo Giraudel">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Hugo Giraudel</div>
+                                <div class="schedule-talk__speaker-job">Accessibility Advocate<br>N26</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Clever, stop being so</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Asking for information online is hard. Users are cautious about the data they share. Companies are quite terrible at asking for the right piece of information, let alone phrasing it correctly. In this presentation, we’ll focus on two major pieces of information about a person: their name, and their gender. We’ll see how not to ask for them, and how we can ensure inclusivity and diversity on the web by asking the right thing in the right format.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Aga Naplocha</strong><br>
-                        <span class="speakers__job">Web Designer &amp; Front-end Dev<br>Adobe</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-okhrimenko.jpg" class="speakers__img" alt="Aleksey Okhrimenko">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-khalilova.jpg" class="schedule-talk__photo-img" alt="Zarema Khalilova">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Zarema Khalilova</div>
+                                <div class="schedule-talk__speaker-job">Front-end Developer<br>Uploadcare</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Playful webcam</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Take photos, record or stream video and audio: all these we can now be done with native browser capabilities and JS.</p>
+                                        <p>But, can we configure our camera the way we do it on smartphones? Zoom, maybe? Apply a mask like in Stories? Change the voice? Or, transform a video stream into ASCII?</p>
+                                        <p>I'll tell you how to work with the webcam in browsers: starting from scratch and apply the crazy stuff in the end.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Aleksey Okhrimenko</strong><br>
-                        <span class="speakers__job">Senior JavaScript Developer<br>IPONWEB</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-prokopov.jpg" class="speakers__img" alt="Nikita Prokopov">
+                    </li>
+
+                    <li class="schedule__time">12:50</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-naplocha.jpg" class="schedule-talk__photo-img" alt="Aga Naplocha">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Aga Naplocha</div>
+                                <div class="schedule-talk__speaker-job">Web Designer &amp; Front-end Dev<br>Adobe</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Breaking the norm with CSS</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Feeling tired and uninspired of constantly building the same layouts? Let's leverage new CSS features that give us a great set of tools and enable to do awesome things on the web. During this talk, I’m going to encourage you to explore visual styles way beyond you’re familiar with using clipping, masking and other CSS properties. The future of web graphics is bright and CSS, undoubtedly, plays the crucial role. Don’t stay behind and get your creative juices flowing!</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Nikita Prokopov</strong><br>
-                        <span class="speakers__job">Senior Software Engineer<br>Cognician</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-ivanov.jpg" class="speakers__img" alt="Alexey Ivanov">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-ivanov.jpg" class="schedule-talk__photo-img" alt="Alexey Ivanov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Alexey Ivanov</div>
+                                <div class="schedule-talk__speaker-job">Front-end Engineer<br>Evil Martians</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Inner structure of webpack bundle</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Webpack is de-facto standard bundler for large front-end projects. Most developers of such projects use it, but most use it like a black box — you place your files in some place, write some magical words in config and magic happens. Until in doesn’t.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Alexey Ivanov</strong><br>
-                        <span class="speakers__job">Front-end Engineer<br>Evil  Martians</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-splitt.jpg" class="speakers__img" alt="Martin  Splitt">
+                    </li>
+
+                    <li class="schedule__time">13:30</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Lunch break
+                    </li>
+
+                    <li class="schedule__time">14:30</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-artyukh.jpg" class="schedule-talk__photo-img" alt="Yuriy Artyukh">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Yuriy Artyukh</div>
+                                <div class="schedule-talk__speaker-job">CTO<br>Coderiver</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">TBA</div>
+                                    <div class="schedule-talk__brief"></div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Martin  Splitt</strong><br>
-                        <span class="speakers__job">Software Engineer<br>Archilogic</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-lettner.jpg" class="speakers__img" alt="Eva Lettner">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-prokopov.jpg" class="schedule-talk__photo-img" alt="Nikita Prokopov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Nikita Prokopov</div>
+                                <div class="schedule-talk__speaker-job">Senior Software Engineer<br>Cognician</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Client and server need to talk</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Every web application has a problem of passing data between a server and a browser. Client-server communication is a complex multi-dimensional problem with a lot of requirements, limitations, pitfalls and tradeoffs. Request-response model is simple to understand, but badly equipped for correct and error-prone communication. Server push through SSE/WebSocket is more modern but too low-level for any serious job to be done in it per se. In this talk, we’ll have a look at high-level libraries that try to approach client-server sync problem from different angles: by extending data model, through high-level APIs, by incorporating logs etc. We’ll explore possible problems, how they can be solved and what tools exists to do so. Keywords: CRDT, event sourcing, operation transformations, Meteor, Apollo, PouchDB, Firebase, Relay, Swarm.js, Logux.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Eva Lettner</strong><br>
-                        <span class="speakers__job">Front-end Web Developer<br>ChillBill</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-khalilova.jpg" class="speakers__img" alt="Zarema Khalilova">
+                    </li>
+
+                    <li class="schedule__time">15:20</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-lettner.jpg" class="schedule-talk__photo-img" alt="Eva Lettner">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Eva Lettner</div>
+                                <div class="schedule-talk__speaker-job">Front-end Web Developer<br>ChillBill</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">TBA</div>
+                                    <div class="schedule-talk__brief">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Zarema Khalilova</strong><br>
-                        <span class="speakers__job">Front-end Developer<br>Uploadcare</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-haritonov.jpg" class="speakers__img" alt="Robert Haritonov">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-haritonov.jpg" class="schedule-talk__photo-img" alt="Robert Haritonov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Robert Haritonov</div>
+                                <div class="schedule-talk__speaker-job">Tech Lead<br>Zoover</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">TBA</div>
+                                    <div class="schedule-talk__brief">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Robert Haritonov</strong><br>
-                        <span class="speakers__job">Tech Lead<br>Zoover</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-matuzovic.jpg" class="speakers__img" alt="Manuel Matuzovic">
+                    </li>
+
+                    <li class="schedule__time">16:00</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Coffee break
+                    </li>
+
+                    <li class="schedule__time">16:20</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-leatherman.jpg" class="schedule-talk__photo-img" alt="Zach Leatherman">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Zach Leatherman</div>
+                                <div class="schedule-talk__speaker-job">Front-end Engineer / Web Developer<br>Filament Group</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">TBA</div>
+                                    <div class="schedule-talk__brief">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Manuel Matuzovic</strong><br>
-                        <span class="speakers__job">Front-end Developer<br>Freelancer</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-leatherman.jpg" class="speakers__img" alt="Zach Leatherman">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-splitt.jpg" class="schedule-talk__photo-img" alt="Martin  Splitt">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Martin Splitt</div>
+                                <div class="schedule-talk__speaker-job">Software Engineer<br>Archilogic</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">WebVR: The next frontier</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>The web as the most low-barrier option for sharing and exploring content shall not lack behind and luckily thanks to WebGL and WebVR we have standards to unlock this new universe as well, using web technologies. We will see how to start exploring VR with JavaScript and what you can get from it.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Zach Leatherman</strong><br>
-                        <span class="speakers__job">Front-end Engineer / Web Developer<br>Filament Group</span>
-                    </article>
-                    <article class="speakers__item">
-                        <div class="speakers__img-wrapper">
-                            <img src="img/speaker-artyukh.jpg" class="speakers__img" alt="Yuriy Artyukh">
+                    </li>
+
+                    <li class="schedule__time">17:00</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Technical break
+                    </li>
+
+                    <li class="schedule__time">17:20</li>
+                    
+                    <li class="schedule__item">
+                        <div class="schedule-stream schedule-stream_double">
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="img/speaker-hospodarets.jpg" class="schedule-talk__photo-img" alt="Serg Hospodarets">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Serg Hospodarets</div>
+                                <div class="schedule-talk__speaker-job">Lead Front-end Developer<br>Guidewire Software</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">CSS Houdini: From CSS Custom Properties to JavaScript Worklets and back</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Today CSS Custom Properties are supported in all the major browsers. Next step — to register them from JavaScript, provide their types and make animatable. And finally — tell the browser how to work with them, providing JS code which will be executed on the different stages of the browser rendering.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="speakers__name">Yuriy Artyukh</strong><br>
-                        <span class="speakers__job">CTO<br>Coderiver</span>
-                    </article>
-                </div>
+                    </li>
+                    
+                    <li class="schedule__time">18:00</li>
+                    
+                    <li class="schedule__item schedule__item_action">
+                        Closing. Afterparty
+                    </li>
+
+                </ul>
             </section>
             <section class="slide wrapper" id="visit-belarus">
                 <h2 class="slide__title slide__title-swipe">Visit Belarus</h2>
@@ -472,6 +685,5 @@
         </script>
         <script>function gotoFact(){document.querySelector(".__js-facts__list").setAttribute("data-num",factIndex+1),document.querySelector(".__js-facts__nav-num").innerHTML=factIndex+1}function resetFactsArrows(){var t=document.querySelector(".__js-facts__nav-arr_prev");0==factIndex?t.classList.add("is-disabled"):t.classList.remove("is-disabled"),t=document.querySelector(".__js-facts__nav-arr_next"),factIndex==factsCount-1?t.classList.add("is-disabled"):t.classList.remove("is-disabled")}var factIndex=0,factsCount=5;document.querySelector(".__js-facts__nav-arr_prev").addEventListener("click",function(){0!=factIndex&&(factIndex--,gotoFact(),resetFactsArrows())}),document.querySelector(".__js-facts__nav-arr_next").addEventListener("click",function(){factIndex!=factsCount-1&&(factIndex++,gotoFact(),resetFactsArrows())}),window.addEventListener("resize",function(){document.querySelector(".__js-facts__main").scrollLeft=0,factIndex=0,gotoFact(),resetFactsArrows()});
         </script>
-        <script src="js/scroll-snap-polyfill.js"></script>
     </body>
 </html>
