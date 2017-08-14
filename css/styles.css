@@ -993,6 +993,11 @@ body {
   .tickets {
     width: 15vh;
   }
+  .tickets__tooltip {
+    width: 27vh;
+    right: 50%;
+    margin-right: -13.5vh;
+  }
   .btn-buy__action {
     display: none;
   }
