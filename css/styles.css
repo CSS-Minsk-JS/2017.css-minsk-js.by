@@ -36,12 +36,13 @@ body {
   background-color: var(--color-white);
 }
 .wrapper {
-  min-width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  width: 90%;
+  margin: 0 5%;
 }
 .nav {
   display: flex;
+  width: 90%;
+  margin: 0 5%;
 }
 .header {
   height: 10vh;
@@ -403,8 +404,8 @@ body {
 }
 
 .facts {
-  width: 100%;
-  margin-top: -5vh;
+  width: 90%;
+  margin: -5vh 5% 0;
 }
 .facts__main {
   position: relative;
@@ -586,6 +587,7 @@ body {
 }
 
 .schedule {
+  margin: 0 5%;
   list-style: none;
 }
 .schedule__time {
@@ -989,7 +991,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) and (max-device-aspect-ratio: 2/1) {
+@media screen and (min-width: 1440px) and (max-width: 2000px) and (max-device-aspect-ratio: 2/1) {
   .tickets {
     width: 15vh;
   }
