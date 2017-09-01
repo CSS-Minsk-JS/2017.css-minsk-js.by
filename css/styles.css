@@ -373,6 +373,10 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
+.partners__img_square {
+  max-width: 75%;
+  max-height: 75%;
+}
 .partners__name {
   color: var(--color-black);
 }
