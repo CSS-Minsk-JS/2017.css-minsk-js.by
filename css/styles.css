@@ -348,7 +348,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.partners_top {
+.partners_top, .partners_part {
   margin-bottom: 5vh;
 }
 .partners__item {
@@ -360,6 +360,9 @@ body {
 }
 .partners_top .partners__item {
   flex-basis: 50%;
+}
+.partners_part .partners__item {
+  flex-basis: 33.333%;
 }
 .partners__item-link {
   width: 80%;
@@ -909,6 +912,9 @@ body {
   }
   .partners_top .partners__item {
     flex-basis: 25%;
+  }
+  .partners_part .partners__item {
+    flex-basis: 20%;
   }
   .organizers__item {
     flex-basis: 25%;
