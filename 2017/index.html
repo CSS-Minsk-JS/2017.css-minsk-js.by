@@ -1,0 +1,817 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS-Minsk-JS Conference, Autumn 2017, Minsk, Renaissance Hotel</title>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="CSS-Minsk-JS Conference, September 10th, 2017, Minsk">
+        <meta property="og:description" content="CSS-Minsk-JS is the first Belarusian conference for front-end developers and UI specialists with all talks in English.">
+        <meta property="og:url" content="http://css-minsk-js.by" />
+        <meta property="og:image" content="http://css-minsk-js.by/img/og-img-2017.png" />
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/styles.css?v=2.5">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-101781331-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter45137643 = new Ya.Metrika({
+                            id:45137643,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/45137643" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="#home" class="header__logo __main">CSS-Minsk-JS Conf</a>
+                <input type="checkbox" id="menu" class="header__toggle-checkbox">
+                <label for="menu" class="header__toggle-button" id="toggle">
+                    <span class="header__toggle-button-lines"></span>
+                </label>
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#home" title="Home">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#schedule" title="Schedule">Schedule</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#visit-belarus" title="Visit Belarus">Visit Belarus</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#organizers" title="Speakers">Organizers</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#partners" title="Speakers">Partners</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link __js-menu-link" href="#code-of-conduct" title="Code of Conduct">Code of Conduct</a>
+                    </li>
+                </ul>
+                <div class="tickets" tabindex="1">
+                    <a href="/" class="btn-buy" tabindex="1">2018</a>
+                </div>
+            </nav>
+        </header>
+        <main class="content">
+            <section class="slide slide_main" id="home">
+                <img src="../img/logo.svg" class="logo" alt="CSS-Minsk-JS Conference logo">
+                <div class="date-place">
+                    <div class="date-place__wrapper">
+                        <strong>September 10th, 2017</strong>
+                        <span>Minsk, Renaissance Hotel</span>
+                    </div>
+                </div>
+                <a href="../files/CSS-Minsk-JS_Partners Offer 2017pdf" class="partners-offer" target="_blank"><span>Partners Offer</span></a>
+            </section>
+            <section class="slide wrapper" id="about">
+                <article class="about">
+                    <p>
+                        <strong>CSS-Minsk-JS</strong> is the first Belarusian conference for front-end developers and UI specialists with all talks in English. Right after the conference all participants and speakers are invited to our awesome after-party!
+                    </p>
+                    <p>
+                        The conference will consist of 2 tracks: <strong>CSS track</strong> (talks about CSS, SVG, a11y etc.) and <strong>JS track</strong> (performance, bundling, i18n etc.).
+                    </p>
+                    <p>
+                        Speakers from the USA, the UK, Austria, the Netherlands, Germany, Ireland, Poland, Russia and many more (among who are GDE experts) are coming to share their experience and knowledge and have great time with Belarusian communities.
+                    </p>
+                    <p>
+                        Our main goal is experience and knowledge sharing in international community. We support ideas of open web, opensource software and free access to knowledge.
+                    </p>
+                    <p>
+                        The conference is organised by 2 tech communities: <a class="link" href="https://www.facebook.com/MinskJS/"><strong>MinskJS</strong></a> and <a class="link" href="https://www.facebook.com/groups/MinskCSS/"><strong>MinskCSS</strong></a>.
+                    </p>
+                    <p>
+                        Join us on <a class="link" href="https://www.facebook.com/cssminskjs/">Facebook</a> and on twitter <a class="link" href="https://twitter.com/CSS_Minsk_JS">@CSS_Minsk_JS</a> to get all the freshest updates. The official hashtag is #cssminskjs.
+                    </p>
+                </article>
+            </section>
+            <section class="slide" id="schedule">
+                <h2 class="slide__title">Schedule</h2>
+                <ul class="schedule">
+                    <li class="schedule__time">9:00</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Registration. Welcome coffee
+                    </li>
+
+                    <li class="schedule__time">9:50</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Opening. Welcome speech
+                    </li>
+
+                    <li class="schedule__time">10:00</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream schedule-stream_double">
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-roberts.jpg" class="schedule-talk__photo-img" alt="Harry Roberts">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Harry Roberts</div>
+                                <div class="schedule-talk__speaker-job">Consultant Front-end Architect<br>CSS Wizardry</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Why Fast Matters</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>We’re all — I hope! — well aware that performance is important; it’s great for business and it’s great for our users. But things are still not fast enough. With more and more emerging markets coming online, and more and more apps moving to the web platform, we’re reaching an intersection where connections are getting slower and websites are getting heavier. In this talk, we’ll learn just what these emerging markets mean to us, and how we can begin to move in the right direction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">10:40</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Technical break
+                    </li>
+
+                    <li class="schedule__time">11:00</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-matuzovic.jpg" class="schedule-talk__photo-img" alt="Manuel Matuzovic">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Manuel Matuzovic</div>
+                                <div class="schedule-talk__speaker-job">Front-end Developer<br>Freelancer</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Designed for Inclusion: Writing CSS with Accessibility in&nbsp;Mind</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Web accessibility has so many facets, that learning about it and implementing it correctly may seem daunting to some of us. Just imagine excluding a whole group of users by simply declaring `* { outline: none; }`.</p>
+                                        <p>The good news, though, is that CSS has a lot to offer that may help us create accessible web sites and web apps. This talk aims to demystify web accessibility and provide you with simple and practical CSS tips and tricks, which you can easily incorporate into your workflow today. You are going to find out how to make your web projects more inclusive and improve the usability and user experience at the same time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-okhrimenko.jpg" class="schedule-talk__photo-img" alt="Aleksey Okhrimenko">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Aleksey Okhrimenko</div>
+                                <div class="schedule-talk__speaker-job">Senior JavaScript Developer<br>IPONWEB</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">I18N – you're doing it wrong!.. probably...</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>The way I was doing internationalization in my JS apps was "standard" and really primitive. When I discovered how to do internationalization professionally I was really shocked. At that point I knew nothing, but I learned a lot. Right now I want to share this knowledge with you. This talk will help you understand how to do I18N professionally and how it's related with ECMA-402 standard.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">11:40</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Coffee break
+                    </li>
+
+                    <li class="schedule__time">12:00</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-giraudel.jpg" class="schedule-talk__photo-img" alt="Hugo Giraudel">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Hugo Giraudel</div>
+                                <div class="schedule-talk__speaker-job">Accessibility Advocate<br>N26</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Clever, stop being so</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Asking for information online is hard. Users are cautious about the data they share. Companies are quite terrible at asking for the right piece of information, let alone phrasing it correctly.</p>
+                                        <p>In this presentation, we’ll focus on two major pieces of information about a person: their name, and their gender. We’ll see how not to ask for them, and how we can ensure inclusivity and diversity on the web by asking the right thing in the right format.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-khalilova.jpg" class="schedule-talk__photo-img" alt="Zarema Khalilova">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Zarema Khalilova</div>
+                                <div class="schedule-talk__speaker-job">Front-end Developer<br>Uploadcare</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Playful webcam</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Take photos, record or stream video and audio: all these we can now be done with native browser capabilities and JS.</p>
+                                        <p>But, can we configure our camera the way we do it on smartphones? Zoom, maybe? Apply a mask like in Stories? Change the voice? Or, transform a video stream into ASCII?</p>
+                                        <p>I'll tell you how to work with the webcam in browsers: starting from scratch and apply the crazy stuff in the end.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">12:50</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-naplocha.jpg" class="schedule-talk__photo-img" alt="Aga Naplocha">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Aga Naplocha</div>
+                                <div class="schedule-talk__speaker-job">Web Designer &amp; Front-end Dev<br>Adobe</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Breaking the norm with CSS</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Feeling tired and uninspired of constantly building the same layouts? Let's leverage new CSS features that give us a great set of tools and enable to do awesome things on the web. During this talk, I’m going to encourage you to explore visual styles way beyond you’re familiar with using clipping, masking and other CSS properties. The future of web graphics is bright and CSS, undoubtedly, plays the crucial role. Don’t stay behind and get your creative juices flowing!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-ivanov.jpg" class="schedule-talk__photo-img" alt="Alexey Ivanov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Alexey Ivanov</div>
+                                <div class="schedule-talk__speaker-job">Front-end Engineer<br>Evil Martians</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Inner structure of webpack bundle</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Webpack is de-facto standard bundler for large front-end projects. Most developers of such projects use it, but most use it like a black box — you place your files in some place, write some magical words in config and magic happens. Until in doesn’t.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">13:30</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Lunch break
+                    </li>
+
+                    <li class="schedule__time">14:30</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-artyukh.jpg" class="schedule-talk__photo-img" alt="Yuriy Artyukh">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Yuriy Artyukh</div>
+                                <div class="schedule-talk__speaker-job">CTO<br>Coderiver</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Anything is possible</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Do you love math? Do you love crazy animations? I do, I am the guy having nightmares about some cool awwward winning websites, and that i need to deliver them by yesterday. So i will share my experience on how you can make some of them, as well as the tricks you can use to optimize performance.  So math, animations, drawing in browser, performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-prokopov.jpg" class="schedule-talk__photo-img" alt="Nikita Prokopov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Nikita Prokopov</div>
+                                <div class="schedule-talk__speaker-job">Senior Software Engineer<br>Cognician</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Client and server need to talk</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Every web application has a problem of passing data between a server and a browser. Client-server communication is a complex multi-dimensional problem with a lot of requirements, limitations, pitfalls and tradeoffs. Request-response model is simple to understand, but badly equipped for correct and error-prone communication. Server push through SSE/WebSocket is more modern but too low-level for any serious job to be done in it per se.</p>
+                                        <p>In this talk, we’ll have a look at high-level libraries that try to approach client-server sync problem from different angles: by extending data model, through high-level APIs, by incorporating logs etc. We’ll explore possible problems, how they can be solved and what tools exists to do so. Keywords: CRDT, event sourcing, operation transformations, Meteor, Apollo, PouchDB, Firebase, Relay, Swarm.js, Logux.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">15:20</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-lettner.jpg" class="schedule-talk__photo-img" alt="Eva Lettner">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Eva Lettner</div>
+                                <div class="schedule-talk__speaker-job">Front-end Web Developer<br>ChillBill</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">CSS Grid and the magic of creative layouts</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>With CSS Grid having just landed in all major browsers, it’s the perfect time to get started and learn about all the amazing features, CSS Grid has to offer.</p>
+                                        <p>So pack up your floats and grid-tools and join me on a journey where I will show you all you need to know to get started with CSS Grid as well as inspire you to create the layouts of the future. Let’s explore the possibilities and have fun building a responsive, accessible and creative web!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-haritonov.jpg" class="schedule-talk__photo-img" alt="Robert Haritonov">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Robert Haritonov</div>
+                                <div class="schedule-talk__speaker-job">Tech Lead<br>Zoover</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">The Truth Is Out There... Monitoring Your Isomorphic Application</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Going a full circle from web-masters to HTML devs and expert JavaScript engineers, more companies are closing the loop by working towards full-stack JS teams. Stepping up the stack and doing more Node.js to power your back-ends, what could be more important than a good night sleep with proper monitoring set-up?</p>
+                                        <p>Learn the essential tools, isomorphic logging solutions, performance and stability measurement approaches and stay confident in your uptimes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">16:00</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Coffee break
+                    </li>
+
+                    <li class="schedule__time">16:20</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">CSS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-leatherman.jpg" class="schedule-talk__photo-img" alt="Zach Leatherman">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Zach Leatherman</div>
+                                <div class="schedule-talk__speaker-job">Front-end Engineer / Web Developer<br>Filament Group</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">Web Fonts are ▢▢▢ Rocket Science</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Web fonts are difficult to get right. An often overlooked and disruptive piece of web performance, web fonts can slow down your site and leave your visitors confused and agitated. No one wants agitated visitors. In this talk we’ll discuss useful methods to render web fonts quickly and without disruption so that visitors can do what should be a simple task—read the text. After all, web fonts are not rocket science.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-stream">
+                            <div class="schedule-stream__title">JS</div>
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-splitt.jpg" class="schedule-talk__photo-img" alt="Martin  Splitt">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Martin Splitt</div>
+                                <div class="schedule-talk__speaker-job">Software Engineer<br>Archilogic</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">WebVR: The next frontier</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>The web as the most low-barrier option for sharing and exploring content shall not lack behind and luckily thanks to WebGL and WebVR we have standards to unlock this new universe as well, using web technologies. We will see how to start exploring VR with JavaScript and what you can get from it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">17:00</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Technical break
+                    </li>
+
+                    <li class="schedule__time">17:20</li>
+
+                    <li class="schedule__item">
+                        <div class="schedule-stream schedule-stream_double">
+                            <div class="schedule-talk">
+                                <div class="schedule-talk__photo">
+                                    <img src="../img/speaker-hospodarets.jpg" class="schedule-talk__photo-img" alt="Serg Hospodarets">
+                                </div>
+                                <div class="schedule-talk__speaker-name">Serg Hospodarets</div>
+                                <div class="schedule-talk__speaker-job">Lead Front-end Developer<br>Guidewire Software</div>
+                                <div class="schedule-talk__content">
+                                    <div class="schedule-talk__title">CSS Houdini: From CSS Custom Properties to JavaScript Worklets and back</div>
+                                    <div class="schedule-talk__brief">
+                                        <p>Today CSS Custom Properties are supported in all the major browsers. Next step — to register them from JavaScript, provide their types and make animatable. And finally — tell the browser how to work with them, providing JS code which will be executed on the different stages of the browser rendering.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="schedule__time">18:00</li>
+
+                    <li class="schedule__item schedule__item_action">
+                        Closing. Afterparty
+                    </li>
+
+                </ul>
+            </section>
+            <section class="slide" id="visit-belarus">
+                <h2 class="slide__title slide__title-swipe">Visit Belarus</h2>
+                <div class="facts">
+                    <div class="facts__main __js-facts__main">
+                        <ul class="facts__list __js-facts__list">
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">The Silicon Valley of Eastern Europe</h3>
+                                                <p class="fact__desc-txt">The Wall Street Journal named Belarus’ Hi-Tech Park ‘the Silicon Valley of Eastern Europe’</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">1</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="../img/facts/hi-tech-park.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Minsk’s 950th Anniversary</h3>
+                                                <p class="fact__desc-txt">Minsk will celebrate its 950th anniversary on September 9th, 2017. There will be a huge party citywide!</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">2</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="../img/facts/minsk-950th-anniversary.jpg" alt="Hi-Tech Park">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Visa-Free Travel</h3>
+                                                <p class="fact__desc-txt">No visa is required if you arrive to and depart from the Minsk National Airport when traveling to Belarus for the period of up to five calendar days.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">3</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="../img/facts/no-visa-entry.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Delicious National Cuisine</h3>
+                                                <p class="fact__desc-txt">A unique feature of the Belarusian national cuisine is a huge variety of cold soups and potato dishes.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">4</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="../img/facts/national-cuisine.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="facts__item">
+                                <div class="fact">
+                                    <div class="fact__desc">
+                                        <div class="fact__desc-wrap">
+                                            <div class="fact__desc-cnt">
+                                                <h3 class="fact__desc-ttl">Large Developers’ Community</h3>
+                                                <p class="fact__desc-txt">Minsk has a really strong front-end developers’ community. We have around half a dozen regular local front-end meetups, including MinskJS and MinskCSS.</p>
+                                            </div>
+                                        </div>
+                                        <b class="fact__num">5</b>
+                                    </div>
+                                    <div class="fact__pic">
+                                        <div class="fact__pic-wrap">
+                                            <img class="fact__pic-cnt" src="../img/facts/front-end-community.jpg" alt="Minsk CSS / Minsk JS">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="facts__nav">
+                        <span class="facts__nav-arr facts__nav-arr_prev is-disabled __js-facts__nav-arr_prev"></span>
+                        <b class="facts__nav-num"><span class="__js-facts__nav-num">1</span>/5</b>
+                        <span class="facts__nav-arr facts__nav-arr_next __js-facts__nav-arr_next"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="slide wrapper" id="organizers">
+                <h2 class="slide__title">Organizers</h2>
+                <div class="slide__brief">
+                    <p class="slide__paragraph">The conference is organised by 2 tech communities: MinskJS and MinskCSS in cooperation with SPACE and LOVATA. Our main goal is experience and knowledge sharing in international community.</p>
+                </div>
+                <div class="organizers">
+                    <article class="organizers__item">
+                        <a href="http://twitter.com/minskjs" target="_blank" class="organizers__item-link">
+                            <img src="../img/minskjs-logo.svg" class="organizers__img" alt="MinskJS">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="http://twitter.com/minskcss" target="_blank" class="organizers__item-link">
+                            <img src="../img/minskcss-logo.svg" class="organizers__img" alt="MinskCSS">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="http://eventspace.by" target="_blank" class="organizers__item-link">
+                            <img src="../img/space-logo.svg" class="organizers__img" alt="SPACE">
+                        </a>
+                    </article>
+                    <article class="organizers__item">
+                        <a href="https://lovata.com" target="_blank" class="organizers__item-link">
+                            <img src="../img/lovata-logo.svg" class="organizers__img" alt="LOVATA">
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="slide wrapper" id="partners">
+                <h2 class="slide__title">Partners</h2>
+                <div class="partners partners_top">
+                    <article class="partners__item">
+                        <a href="http://www.apalon.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/apalon-logo.png" class="partners__img" alt="Apalon">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://intetics.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/intetics-logo.png" class="partners__img" alt="Intetics">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href=" http://www.tulaco.by/" target="_blank" class="partners__item-link">
+                            <img src="../img/tulaco-logo.png" class="partners__img" alt="TulaCo">
+                        </a>
+                    </article>
+                </div>
+                <h2 class="slide__title">Participant partners</h2>
+                <div class="partners partners_part">
+                    <article class="partners__item">
+                        <a href="https://www.jetbrains.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/jetbrains-logo.svg" class="partners__img partners__img_square" alt="JetBrains">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://developers.google.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/google-logo.png" class="partners__img" alt="Google">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://uploadcare.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/uploadcare-logo.svg" class="partners__img" alt="Uploadcare">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://exadel.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/exadel-logo.png" class="partners__img partners__img_square" alt="Exadel">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://www.samsung.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/samsung-logo.png" class="partners__img" alt="Samsung">
+                        </a>
+                    </article>
+                </div>
+                <h2 class="slide__title">Info partners</h2>
+                <div class="partners">
+                    <article class="partners__item">
+                        <a href="https://web-standards.ru" target="_blank" class="partners__item-link">
+                            <img src="../img/web-standards-logo.svg" class="partners__img" alt="Web Standards">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://frontendweekend.ml" target="_blank" class="partners__item-link">
+                            <img src="../img/frontend-weekend-logo.svg" class="partners__img" alt="Frontend Weekend">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/4frontby/" target="_blank" class="partners__item-link">
+                            <img src="../img/4front-logo.png" class="partners__img" alt="4front">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://webnotbombs.net" target="_blank" class="partners__item-link">
+                            <img src="../img/web-not-bombs-logo.svg" class="partners__img" alt="Web Not Bombs">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://rollingscopes.com" target="_blank" class="partners__item-link">
+                            <img src="../img/the-rolling-scopes-logo.svg" class="partners__img" alt="The Rolling Scopes">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://dev.by" target="_blank" class="partners__item-link">
+                            <img src="../img/devby-logo.svg" class="partners__img" alt="Dev.by">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://www.onliner.by/" target="_blank" class="partners__item-link">
+                            <img src="../img/onliner-logo.png" class="partners__img" alt="Onliner">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://css.moscow" target="_blank" class="partners__item-link">
+                            <img src="../img/moscowcss-logo.svg" class="partners__img" alt="MoscowCSS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.moscowjs.ru" target="_blank" class="partners__item-link">
+                            <img src="../img/moscowjs-logo.svg" class="partners__img" alt="MoscowJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://spb-frontend.ru" target="_blank" class="partners__item-link">
+                            <img src="../img/spb-frontend-logo.png" class="partners__img" alt="SPB Frontend">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://kyivjs.org" target="_blank" class="partners__item-link">
+                            <img src="../img/kyivjs-logo.svg" class="partners__img" alt="KyivJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://sofiajs.org" target="_blank" class="partners__item-link">
+                            <img src="../img/sofiajs-logo.png" class="partners__img" alt="SofiaJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://warsawjs.com" target="_blank" class="partners__item-link">
+                            <img src="../img/warsawjs-logo.svg" class="partners__img" alt="WarsawJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://it-events.com" target="_blank" class="partners__item-link">
+                            <img src="../img/iteventscom-logo.png" class="partners__img" alt="Айти-Событие">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://dou.ua" target="_blank" class="partners__item-link">
+                            <img src="../img/douua-logo.png" class="partners__img" alt="DOU.ua">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://jobs.tut.by" target="_blank" class="partners__item-link">
+                            <img src="../img/jobstutby-logo.svg" class="partners__img" alt="jobs.tut.by">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://devjs.org" target="_blank" class="partners__item-link">
+                            <img src="../img/devjs-logo.png" class="partners__img" alt="Dev.js">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/beerjsminsk/" target="_blank" class="partners__item-link">
+                            <img src="../img/beerjsminsk-logo.png" class="partners__img" alt="LondonJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://html5.by/" target="_blank" class="partners__item-link">
+                            <img src="../img/html5by-logo.png" class="partners__img" alt="html5.by">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/frontend.meetup.riga" target="_blank" class="partners__item-link">
+                            <img src="../img/frontendmeetupriga-logo.jpg" class="partners__img" alt="Frontend Meetup Riga">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/girlsjs/" target="_blank" class="partners__item-link">
+                            <img src="../img/girlsjs-logo.svg" class="partners__img" alt="girls.js">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/beerjskyiv/" target="_blank" class="partners__item-link">
+                            <img src="../img/beerjskyiv-logo.png" class="partners__img" alt="BeerJS Kyiv">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://esnextnews.com/" target="_blank" class="partners__item-link">
+                            <img src="../img/esnextnews-logo.png" class="partners__img" alt="ES.next News">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.meetup.com/London-JavaScript-Community/" target="_blank" class="partners__item-link">
+                            <img src="../img/londonjs-logo.png" class="partners__img" alt="LondonJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.dotcss.io/" target="_blank" class="partners__item-link">
+                            <img src="../img/dotcss-logo.png" class="partners__img" alt="DotCSS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://www.facebook.com/javascript.fr" target="_blank" class="partners__item-link">
+                            <img src="../img/javascriptfrance-logo.png" class="partners__img" alt="JavaScript France">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://chernivtsi.js.org/" target="_blank" class="partners__item-link">
+                            <img src="../img/chernivtsijs-logo.svg" class="partners__img" alt="ChernivtsiJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://odessajs.org/" target="_blank" class="partners__item-link">
+                            <img src="../img/odessajs-logo.png" class="partners__img" alt="OdessaJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://react.amsterdam" target="_blank" class="partners__item-link">
+                            <img src="../img/reactams-logo.png" class="partners__img" alt="React Amsterdam">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://amsterdamjs.com" target="_blank" class="partners__item-link">
+                            <img src="../img/amsjs-logo.png" class="partners__img" alt="AmsterdamJS">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="http://itcluster.lviv.ua/" target="_blank" class="partners__item-link">
+                            <img src="../img/lvivitcluster-logo.png" class="partners__img" alt="Lviv It Cluster">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://netology.ru" target="_blank" class="partners__item-link">
+                            <img src="../img/netology-logo.svg" class="partners__img" alt="Netology">
+                        </a>
+                    </article>
+                    <article class="partners__item">
+                        <a href="https://itvdn.com" target="_blank" class="partners__item-link">
+                            <img src="../img/itvdn-logo.png" class="partners__img" alt="ITVDN">
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="slide wrapper" id="code-of-conduct">
+                <h2 class="slide__title">Code of Conduct </h2>
+                <div class="text-content">
+                    <div class="text-content__wrapper">
+                        <p class="slide__paragraph">CSS-Minsk-JS is a community conference intended for networking and collaboration in the developer community. We value the participation of each member of the community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events, whether officially sponsored by CSS-Minsk-JS or not. To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at any CSS-Minsk-JS event are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event.</p>
+                        <h3 class="slide__subtitle">The Short Version</h3>
+                        <p class="slide__paragraph">CSS-Minsk-JS is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. All communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate for any conference venue, including talks. Be kind to others. Do not insult or put down other attendees. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for CSS-Minsk-JS. Thank you for helping make this a welcoming, friendly event for all.</p>
+                        <h3 class="slide__subtitle">The Longer Version</h3>
+                        <p class="slide__paragraph">Harassment includes offensive communication related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment. Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for CSS-Minsk-JS.</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    <p>Localhost LLC</p>
+                    <p>UNP 192134764 ОКPО 381354875000<br/>
+                    Address: Oktyabrskaya str., 16, 220030, Minsk, Republic of Belarus<br/>
+                    <a class="footer__link" href="mailto:daria@eventspace.by">daria@eventspace.by</a></p>
+                    <p><a class="footer__link" href="../files/CSS-Minsk-JS_Public_Agreement.pdf" target="_blank">Public Agreement (RU)</a></p>
+                </div>
+            </footer>
+        </main>
+
+        <script>function onScroll(){var e=document.querySelector(".slide_main").getBoundingClientRect().bottom+window.pageYOffset-menuElement.getBoundingClientRect().height;menuElement.classList.contains(specialClass)&&window.pageYOffset<=e?menuElement.classList.remove(specialClass):window.pageYOffset>e&&menuElement.classList.add(specialClass)}for(var links=document.querySelectorAll(".__js-menu-link"),i=0;i<links.length;i++)links[i].addEventListener("click",function(e){document.querySelector(".header__toggle-checkbox").checked=!1});var menuElement=document.querySelector(".header"),specialClass="__logo-visible";onScroll(),document.querySelector(".content").addEventListener("scroll",onScroll);
+        </script>
+        <script>function gotoFact(){document.querySelector(".__js-facts__list").setAttribute("data-num",factIndex+1),document.querySelector(".__js-facts__nav-num").innerHTML=factIndex+1}function resetFactsArrows(){var t=document.querySelector(".__js-facts__nav-arr_prev");0==factIndex?t.classList.add("is-disabled"):t.classList.remove("is-disabled"),t=document.querySelector(".__js-facts__nav-arr_next"),factIndex==factsCount-1?t.classList.add("is-disabled"):t.classList.remove("is-disabled")}var factIndex=0,factsCount=5;document.querySelector(".__js-facts__nav-arr_prev").addEventListener("click",function(){0!=factIndex&&(factIndex--,gotoFact(),resetFactsArrows())}),document.querySelector(".__js-facts__nav-arr_next").addEventListener("click",function(){factIndex!=factsCount-1&&(factIndex++,gotoFact(),resetFactsArrows())}),window.addEventListener("resize",function(){document.querySelector(".__js-facts__main").scrollLeft=0,factIndex=0,gotoFact(),resetFactsArrows()});
+        </script>
+    </body>
+</html>

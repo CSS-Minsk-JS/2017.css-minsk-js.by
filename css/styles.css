@@ -54,6 +54,10 @@ body {
   z-index: 100;
   background-color: var(--color-white);
 }
+.y2018 .header {
+  background: transparent;
+  border: none;
+}
 .header__logo {
   width: 0;
   height: 9vh;
