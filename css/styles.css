@@ -1028,7 +1028,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1440px) and (min-device-aspect-ratio: 2/1) {
+@media only screen and (min-width: 1440px) {
   .date-place {
     font-size: 4.7vh;
   }
