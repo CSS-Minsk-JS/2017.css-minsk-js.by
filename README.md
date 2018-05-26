@@ -1,10 +1,13 @@
 # css-minsk-js.by
 
-## Installing Stylelint dependencies
+## Installing dependencies
 
 ```
-npm install stylelint-suitcss --save-dev
-npm install stylelint-declaration-use-variable
-npm install stylelint-order
-npm install stylelint-selector-bem-pattern
+npm i
+```
+
+## Available tasks
+
+```
+gulp help
 ```
