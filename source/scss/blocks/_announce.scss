@@ -1,0 +1,76 @@
+.announce {
+  width: 980px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include tablet {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.announce__logo {
+  width: 320px;
+  height: 260px;
+  margin-right: 60px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.announce__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    width: 320px;
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+
+.announce__item {
+  margin-bottom: 0.42em;
+  font-size: 76px;
+  line-height: 0.9em;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 42px;
+  }
+}
+
+.announce__details {
+  margin-top: 50px;
+  margin-left: 380px;
+  flex-basis: 100%;
+  font-family: "PT Mono", monospace;
+  font-size: 34px;
+  line-height: 1.4;
+
+  @include tablet {
+    margin-top: 24px;
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.announce__date {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.announce__place {
+  margin: 0;
+  padding: 0;
+}
+

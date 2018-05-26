@@ -41,7 +41,11 @@
     "stylelint": "^9.2.1",
     "stylelint-declaration-use-variable": "^1.6.1",
     "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.1.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
     "stylelint-suitcss": "^3.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }

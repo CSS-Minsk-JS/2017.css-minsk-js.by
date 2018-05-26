@@ -1,3 +1,7 @@
 .nav {
+  margin: 73px 78px;
 
+  @include tablet {
+    margin: 20px;
+  }
 }
