@@ -1,0 +1,35 @@
+/* pt-mono-regular - latin */
+@font-face {
+  font-family: "PT Mono";
+  src: local("PT Mono"),
+    local("PTMono-Regular"),
+    url("../fonts/pt-mono-v5-latin-regular.woff2") format("woff2"),
+    url("../fonts/pt-mono-v5-latin-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+    local("PTSans-Regular"),
+    url("../fonts/pt-sans-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/pt-sans-v9-latin-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* pt-sans-bold - latin */
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url("../fonts/pt-sans-v9-latin-700.woff2") format("woff2"),
+    url("../fonts/pt-sans-v9-latin-700.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}

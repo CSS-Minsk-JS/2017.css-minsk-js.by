@@ -2,20 +2,16 @@ ignoreFiles:
     - node_modules/**/*
     - packages/**/node_modules/**/*
     - build/**/*
+    - gulp-tasks/**/*
+    - source/**/*.html
 plugins:
     - stylelint-suitcss
-    #- stylelint-no-unsupported-browser-features
     - stylelint-declaration-use-variable
     - stylelint-order
     - stylelint-selector-bem-pattern
 rules:
   suitcss/root-no-standard-properties: true
   suitcss/selector-root-no-composition: true
-
-  # plugin/no-unsupported-browser-features:
-  #   - true
-  #   - severity:
-  #     - warning
 
   sh-waqar/declaration-use-variable:
     - /color/
@@ -132,6 +128,7 @@ rules:
     - font-style
     - font-variant
     - font-weight
+    - font-display
     - letter-spacing
     - line-height
     - text-align
@@ -411,6 +408,7 @@ rules:
     - font-style
     - font-variant
     - font-weight
+    - font-display
     - letter-spacing
     - line-height
     - text-align
@@ -555,7 +553,7 @@ rules:
     /^animation/:
       - "ms"
 
-  length-zero-no-unit: true,
+  length-zero-no-unit: true
 
   color-hex-case: lower
   color-hex-length: long
@@ -579,8 +577,9 @@ rules:
   function-linear-gradient-no-nonstandard-direction: true
   function-calc-no-unspaced-operator: true
 
-  value-list-comma-space-after: always
+  value-list-comma-space-after: always-single-line
   value-list-comma-space-before: never
+  value-list-comma-newline-after: always-multi-line
 
   at-rule-no-unknown: true
   at-rule-no-vendor-prefix: true
