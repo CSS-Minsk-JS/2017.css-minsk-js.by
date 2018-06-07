@@ -2,20 +2,19 @@ ignoreFiles:
     - node_modules/**/*
     - packages/**/node_modules/**/*
     - build/**/*
+    - gulp-tasks/**/*
+    - source/**/*.html
 plugins:
     - stylelint-suitcss
-    #- stylelint-no-unsupported-browser-features
     - stylelint-declaration-use-variable
     - stylelint-order
     - stylelint-selector-bem-pattern
+    - stylelint-scss
 rules:
   suitcss/root-no-standard-properties: true
   suitcss/selector-root-no-composition: true
 
-  # plugin/no-unsupported-browser-features:
-  #   - true
-  #   - severity:
-  #     - warning
+  scss/at-rule-no-unknown: true
 
   sh-waqar/declaration-use-variable:
     - /color/
@@ -42,6 +41,7 @@ rules:
     - max-height
 
     # Boxes
+    - box-sizing
     - margin
     - margin-top
     - margin-right
@@ -132,6 +132,7 @@ rules:
     - font-style
     - font-variant
     - font-weight
+    - font-display
     - letter-spacing
     - line-height
     - text-align
@@ -252,7 +253,7 @@ rules:
   no-duplicate-selectors: true
   no-eol-whitespace: true
   no-descending-specificity: true
-  rule-empty-line-before: never-multi-line
+  rule-empty-line-before: always-multi-line
 
   comment-no-empty: true
   comment-whitespace-inside: always
@@ -260,7 +261,8 @@ rules:
     -
       - /^TODO:/
       - /^FIXME:/
-    - severity: warning
+    - severity:
+      - warning
 
   selector-max-id: 0
   selector-max-attribute: 0
@@ -321,6 +323,7 @@ rules:
     - max-height
 
     # Boxes
+    - box-sizing
     - margin
     - margin-top
     - margin-right
@@ -411,6 +414,7 @@ rules:
     - font-style
     - font-variant
     - font-weight
+    - font-display
     - letter-spacing
     - line-height
     - text-align
@@ -511,15 +515,8 @@ rules:
     - scroll-snap-type
 
   property-blacklist:
-    - animation
-    - background
-    - border
     - columns
     - flex
-    - font
-    - margin
-    - outline
-    - padding
 
   custom-property-empty-line-before: never
 
@@ -555,7 +552,7 @@ rules:
     /^animation/:
       - "ms"
 
-  length-zero-no-unit: true,
+  length-zero-no-unit: true
 
   color-hex-case: lower
   color-hex-length: long
@@ -579,10 +576,10 @@ rules:
   function-linear-gradient-no-nonstandard-direction: true
   function-calc-no-unspaced-operator: true
 
-  value-list-comma-space-after: always
+  value-list-comma-space-after: always-single-line
   value-list-comma-space-before: never
+  value-list-comma-newline-after: always-multi-line
 
-  at-rule-no-unknown: true
   at-rule-no-vendor-prefix: true
   at-rule-name-case: lower
   at-rule-name-space-after: always

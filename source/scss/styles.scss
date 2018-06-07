@@ -1,0 +1,20 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+@import "blocks/announce";
+@import "blocks/btn";
+@import "blocks/content";
+@import "blocks/delimiter";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/page";
+@import "blocks/tickets";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
