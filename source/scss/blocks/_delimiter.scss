@@ -1,14 +1,14 @@
 .delimiter {
   max-width: 2410px;
-  height: 180px;
+  height: 90px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: block;
   background-image: url("../img/pattern-css-minsk-js.svg"), url("../img/pattern-shape.svg");
   background-repeat: no-repeat;
-  background-position: 0 0, 1361px 0;
-  background-size: 1397px 180px, auto 180px;
+  background-position: 0 0, 680px 0;
+  background-size: 698px 90px, auto 90px;
 
   @include tablet {
     height: 90px;

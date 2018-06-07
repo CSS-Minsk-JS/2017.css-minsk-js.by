@@ -5,12 +5,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  transform: scale(0.9);
 
   @include tablet {
     width: 100%;
-    padding: 20px;
+    padding: 0;
     flex-direction: column;
     align-items: center;
+    transform: scale(1);
   }
 }
 
@@ -21,6 +23,7 @@
 
   @include tablet {
     margin-right: 0;
+    height: 200px;
   }
 }
 
@@ -43,12 +46,12 @@
   text-transform: uppercase;
 
   @include tablet {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
 .announce__details {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 380px;
   flex-basis: 100%;
   font-family: "PT Mono", monospace;
@@ -58,7 +61,7 @@
   @include tablet {
     margin-top: 24px;
     margin-left: 0;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
 }
